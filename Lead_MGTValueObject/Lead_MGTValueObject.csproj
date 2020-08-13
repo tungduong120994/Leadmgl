@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5B10901-FC1C-41BD-B117-9CD1D801EE2B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lead_MGTValueObject</RootNamespace>
+    <AssemblyName>Lead_MGTValueObject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\Lead_MGT\packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DatatableLead.cs" />
+    <Compile Include="Common\DatatableLeadImport.cs" />
+    <Compile Include="Common\DataTableToList.cs" />
+    <Compile Include="DataFillterModel\BoundCodeDataFillterModel.cs" />
+    <Compile Include="DataFillterModel\DuAnDataFillterModel.cs" />
+    <Compile Include="DieuKienDuAnModel\DieuKienCheckDeDupModel.cs" />
+    <Compile Include="DieuKienDuAnModel\BoundCodeDeDupModel.cs" />
+    <Compile Include="DieuKienDuAnModel\CachGhepModel.cs" />
+    <Compile Include="DieuKienDuAnModel\SaveCauHinhDuAnModel.cs" />
+    <Compile Include="DieuKienDuAnModel\DieuKienDuAnModel.cs" />
+    <Compile Include="DieuKienDuAnModel\DieuKienDuAnFillterModel.cs" />
+    <Compile Include="DuAnModel\DuAnModel.cs" />
+    <Compile Include="DuAnModel\DuAnFillterModel.cs" />
+    <Compile Include="BoundCodeModel\BoundCodeModel.cs" />
+    <Compile Include="BoundCodeModel\BoundCodeFillterModel.cs" />
+    <Compile Include="ImportLeadModel\LeadModel.cs" />
+    <Compile Include="ImportLeadModel\ImportLeadModel.cs" />
+    <Compile Include="PhanPhoiLeadModel\LichPhanPhoiLeadModel.cs" />
+    <Compile Include="PhanPhoiLeadModel\BolocModel.cs" />
+    <Compile Include="PhanPhoiLeadModel\SavePhanPhoiLeadModel.cs" />
+    <Compile Include="PhanPhoiLeadModel\ChienDichModel.cs" />
+    <Compile Include="PhanPhoiLeadModel\ViewPhanPhoiLeadModel.cs" />
+    <Compile Include="PhanPhoiLeadModel\TinhThanhModel.cs" />
+    <Compile Include="LeadSachModel\ListLeadSachModel.cs" />
+    <Compile Include="LeadSachModel\LeadLeadSachFillterModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

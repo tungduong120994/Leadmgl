@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Lead_GWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AbpUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreationTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CreatorUserId" Type="Int64" />
+    <Property Name="DeleterUserId" Type="Int64" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="7" />
+    <Property Name="EmailAddress" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmailConfirmationCode" Type="String" MaxLength="328" FixedLength="false" Unicode="true" />
+    <Property Name="SaleCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoaiHopDongId" Type="Int32" />
+    <Property Name="Gender" Type="Int32" />
+    <Property Name="Birthday" Type="DateTime" Precision="7" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="7" />
+    <Property Name="LastModifierUserId" Type="Int64" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="7" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NormalizedEmailAddress" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NormalizedUserName" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PasswordResetCode" Type="String" MaxLength="328" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProfilePictureId" Type="Guid" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ShouldChangePasswordOnNextLogin" Type="Boolean" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CD_DieuKienCheckDuAn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenantId" Type="Int32" />
+    <Property Name="TenDieuKien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PhepTinh" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GiaTri" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Tu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Den" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DuAnId" Type="Int32" />
+    <Property Name="CreationTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CreatorUserId" Type="Int64" />
+    <Property Name="DeleterUserId" Type="Int64" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="7" />
+    <Property Name="LastModifierUserId" Type="Int64" />
+    <NavigationProperty Name="DA_DuAn" Relationship="Self.FK_CD_DieuKienCheckDuAn_DA_DuAn" FromRole="CD_DieuKienCheckDuAn" ToRole="DA_DuAn" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DA_DuAn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenantId" Type="Int32" />
+    <Property Name="MaDuAn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenDuAn" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NgayPheDuyet" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NgayBatDau" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NgayKetThuc" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DoiTacId" Type="Int32" />
+    <Property Name="NoiDung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="TrangThai" Type="Int32" />
+    <Property Name="GhiChu" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="CreationTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CreatorUserId" Type="Int64" />
+    <Property Name="DeleterUserId" Type="Int64" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="7" />
+    <Property Name="LastModifierUserId" Type="Int64" />
+    <NavigationProperty Name="CD_DieuKienCheckDuAn" Relationship="Self.FK_CD_DieuKienCheckDuAn_DA_DuAn" FromRole="DA_DuAn" ToRole="CD_DieuKienCheckDuAn" />
+  </EntityType>
+  <EntityType Name="DM_BoundCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Bound_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DuAnID" Type="Int32" />
+    <Property Name="DoiTacId" Type="Int32" Nullable="false" />
+    <Property Name="CreationTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CreatorUserId" Type="Int64" />
+    <Property Name="DeleterUserId" Type="Int64" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="7" />
+    <Property Name="LastModifierUserId" Type="Int64" />
+    <Property Name="SanPhamId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DM_DoiTac">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenantId" Type="Int32" />
+    <Property Name="MaDoiTac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenDoiTac" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="MaSoThue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreationTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CreatorUserId" Type="Int64" />
+    <Property Name="DeleterUserId" Type="Int64" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="7" />
+    <Property Name="LastModifierUserId" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Salary" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BirthDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Lead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Band_CC" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Band_UPL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Bound_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CC_Limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DoiTacId" Type="Int64" />
+    <Property Name="DuAnID" Type="Int64" />
+    <Property Name="Created_Id" Type="Int32" />
+    <Property Name="Created_Date" Type="DateTime" Precision="3" />
+    <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Income_Level" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="Lead_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="National_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Post_Date" Type="DateTime" Precision="3" />
+    <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Province_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Score_Range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPL_Interest" Type="Double" />
+    <Property Name="UPL_Limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Valid_Date" Type="DateTime" Precision="0" />
+    <Property Name="Transfer_To" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Transfer_Date" Type="DateTime" Precision="3" />
+    <Property Name="District_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Process_DuplicateID" Type="Int32" />
+    <Property Name="Status_DuplicateID" Type="Int32" />
+    <Property Name="Description1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description4" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Lead_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Lead_Status" Relationship="Self.FK_Lead_StatusLead_Lead" FromRole="Lead" ToRole="Lead_Status" />
+  </EntityType>
+  <EntityType Name="Lead_Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeadId" Type="Int64" Nullable="false" />
+    <Property Name="UserId" Type="Int64" />
+    <Property Name="BuocXuLyId" Type="Int32" Nullable="false" />
+    <Property Name="NhomTrangThaiId" Type="Int32" Nullable="false" />
+    <Property Name="TrangThaiId" Type="Int32" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreationTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CreatorUserId" Type="Int64" />
+    <Property Name="DeleterUserId" Type="Int64" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="7" />
+    <Property Name="LastModifierUserId" Type="Int64" />
+    <NavigationProperty Name="Lead" Relationship="Self.FK_Lead_StatusLead_Lead" FromRole="Lead_Status" ToRole="Lead" />
+  </EntityType>
+  <EntityType Name="Lead_Version">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeadID" Type="Int64" />
+    <Property Name="Address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Band_CC" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Band_UPL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Bound_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CC_Limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DoiTacId" Type="Int64" />
+    <Property Name="DuAnID" Type="Int64" />
+    <Property Name="Created_Id" Type="Int32" />
+    <Property Name="Created_Date" Type="DateTime" Precision="3" />
+    <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Income_Level" Type="Int32" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="Lead_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="National_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Post_Date" Type="DateTime" Precision="3" />
+    <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Province_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Score_Range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPL_Interest" Type="Double" />
+    <Property Name="UPL_Limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Valid_Date" Type="DateTime" Precision="0" />
+    <Property Name="Transfer_To" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Transfer_Date" Type="DateTime" Precision="3" />
+    <Property Name="District_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Process_DuplicateID" Type="Int32" />
+    <Property Name="Status_DuplicateID" Type="Int32" />
+    <Property Name="Description1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description4" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Lead_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Lead_GW_Id" Type="Int64" />
+  </EntityType>
+  <EntityType Name="CD_BoLocPhanPhoi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhanPhoiLeadId" Type="Int64" />
+    <Property Name="TenBoLoc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GiaTri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tu" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Den" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreationTime" Type="DateTime" Precision="3" />
+    <Property Name="CreatorUserId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="DeleterUserId" Type="Int32" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CD_CachPhanPhoi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenCachPhanPhoi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhanPhoiLeadId" Type="Int64" />
+    <Property Name="LichPhanPhoi" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreationTime" Type="DateTime" Precision="3" />
+    <Property Name="CreatorUserId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="DeleterUserId" Type="Int32" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CD_DieuKienCheckBoundCode">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="BoundCodeId" />
+      <PropertyRef Name="BoundCodeCheckId" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BoundCodeId" Type="Int64" Nullable="false" />
+    <Property Name="BoundCodeCheckId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreationTime" Type="DateTime" Precision="3" />
+    <Property Name="CreatorUserId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="DeleterUserId" Type="Int32" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CD_LichPhanPhoiLead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NgayPhanPhoiLead" Type="DateTime" Precision="0" />
+    <Property Name="GioPhanPhoi" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="CachPhanPhoiLeadId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreationTime" Type="DateTime" Precision="3" />
+    <Property Name="CreatorUserId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="DeleterUserId" Type="Int32" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+    <Property Name="PhanPhoiLeadId" Type="Int64" Nullable="false" />
+    <Property Name="ThangPhanPhoi" Type="Int32" />
+    <Property Name="NamPhanPhoi" Type="Int32" />
+    <Property Name="NgayPhanPhoi" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CD_PhanPhoiLead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HeThongNhanLead" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DuAnID" Type="Int64" />
+    <Property Name="MaChienDich" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreationTime" Type="DateTime" Precision="3" />
+    <Property Name="CreatorUserId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="DeleterUserId" Type="Int32" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GW_Tranfer_CRM">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="address2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cc_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="created_by_user_id" Type="Int32" />
+    <Property Name="created_on_date" Type="DateTime" Precision="3" />
+    <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="date_of_birth" Type="DateTime" Precision="3" />
+    <Property Name="deadline" Type="DateTime" Precision="3" />
+    <Property Name="distributed" Type="Int16" />
+    <Property Name="distributed_by_user_id" Type="Int32" />
+    <Property Name="distributed_on_date" Type="DateTime" Precision="3" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="exists" Type="Int16" />
+    <Property Name="i2b_status" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="identification_date" Type="DateTime" Precision="3" />
+    <Property Name="identification_place" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="income_level" Type="Int32" />
+    <Property Name="last_modified_by_user_id" Type="Int32" />
+    <Property Name="last_modified_on_date" Type="DateTime" Precision="3" />
+    <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Precision="3" />
+    <Property Name="post_id" Type="Int64" />
+    <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="upl_interest" Type="Double" />
+    <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="valid_date" Type="DateTime" Precision="0" />
+    <Property Name="dwh_exists" Type="Int32" />
+    <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="transfer_date" Type="DateTime" Precision="3" />
+    <Property Name="in_active" Type="Int32" />
+    <Property Name="upl_interest_origin" Type="Double" />
+  </EntityType>
+  <EntityType Name="Lead_GW">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="leadid" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="leadid" Type="Int64" Nullable="false" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="created_by_user_id" Type="Int32" />
+    <Property Name="created_on_date" Type="DateTime" Precision="3" />
+    <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="exists" Type="Int16" />
+    <Property Name="income_level" Type="Int32" />
+    <Property Name="last_modified_by_user_id" Type="Int32" />
+    <Property Name="last_modified_on_date" Type="DateTime" Precision="3" />
+    <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Precision="3" />
+    <Property Name="post_id" Type="Int64" />
+    <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="upl_interest" Type="Double" />
+    <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="valid_date" Type="DateTime" Precision="0" />
+    <Property Name="dwh_exists" Type="Int32" />
+    <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="transfer_date" Type="DateTime" Precision="3" />
+    <Property Name="in_active" Type="Int32" />
+    <Property Name="gr_bound_code" Type="Int32" />
+    <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gr_project" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Lead_GW_Compare">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="leadid" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="leadid" Type="Int64" Nullable="false" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="created_by_user_id" Type="Int32" />
+    <Property Name="created_on_date" Type="DateTime" Precision="3" />
+    <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="exists" Type="Int16" />
+    <Property Name="income_level" Type="Int32" />
+    <Property Name="last_modified_by_user_id" Type="Int32" />
+    <Property Name="last_modified_on_date" Type="DateTime" Precision="3" />
+    <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Precision="3" />
+    <Property Name="post_id" Type="Int64" />
+    <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="upl_interest" Type="Double" />
+    <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="valid_date" Type="DateTime" Precision="0" />
+    <Property Name="dwh_exists" Type="Int32" />
+    <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="transfer_date" Type="DateTime" Precision="3" />
+    <Property Name="in_active" Type="Int32" />
+    <Property Name="gr_bound_code" Type="Int32" />
+    <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gr_project" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Lead_GW_Compare_copy1">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="leadid" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="leadid" Type="Int64" Nullable="false" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="created_by_user_id" Type="Int32" />
+    <Property Name="created_on_date" Type="DateTime" Precision="3" />
+    <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="exists" Type="Int16" />
+    <Property Name="income_level" Type="Int32" />
+    <Property Name="last_modified_by_user_id" Type="Int32" />
+    <Property Name="last_modified_on_date" Type="DateTime" Precision="3" />
+    <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Precision="3" />
+    <Property Name="post_id" Type="Int64" />
+    <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="upl_interest" Type="Double" />
+    <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="valid_date" Type="DateTime" Precision="0" />
+    <Property Name="dwh_exists" Type="Int32" />
+    <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="transfer_date" Type="DateTime" Precision="3" />
+    <Property Name="in_active" Type="Int32" />
+    <Property Name="gr_bound_code" Type="Int32" />
+    <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gr_project" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Lead_GW_copy1">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="leadid" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="leadid" Type="Int64" Nullable="false" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="created_by_user_id" Type="Int32" />
+    <Property Name="created_on_date" Type="DateTime" Precision="3" />
+    <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="exists" Type="Int16" />
+    <Property Name="income_level" Type="Int32" />
+    <Property Name="last_modified_by_user_id" Type="Int32" />
+    <Property Name="last_modified_on_date" Type="DateTime" Precision="3" />
+    <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Precision="3" />
+    <Property Name="post_id" Type="Int64" />
+    <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="upl_interest" Type="Double" />
+    <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="valid_date" Type="DateTime" Precision="0" />
+    <Property Name="dwh_exists" Type="Int32" />
+    <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="transfer_date" Type="DateTime" Precision="3" />
+    <Property Name="in_active" Type="Int32" />
+    <Property Name="gr_bound_code" Type="Int32" />
+    <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gr_project" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Lead_GW_Process">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="leadid" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="leadid" Type="Int64" Nullable="false" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="created_by_user_id" Type="Int32" />
+    <Property Name="created_on_date" Type="DateTime" Precision="3" />
+    <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="exists" Type="Int16" />
+    <Property Name="income_level" Type="Int32" />
+    <Property Name="last_modified_by_user_id" Type="Int32" />
+    <Property Name="last_modified_on_date" Type="DateTime" Precision="3" />
+    <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Precision="3" />
+    <Property Name="post_id" Type="Int64" />
+    <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="upl_interest" Type="Double" />
+    <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="valid_date" Type="DateTime" Precision="0" />
+    <Property Name="dwh_exists" Type="Int32" />
+    <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="transfer_date" Type="DateTime" Precision="3" />
+    <Property Name="in_active" Type="Int32" />
+    <Property Name="gr_bound_code" Type="Int32" />
+    <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gr_project" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Lead_Import">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Province_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CC_Band" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CC_Limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Scoring_CC" Type="DateTime" Precision="0" />
+    <Property Name="UPL_Band" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPL_Limit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Lai_Suat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Scoring_UPL" Type="DateTime" Precision="0" />
+    <Property Name="Bound_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="San_Pham" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatorUserId" Type="Int64" />
+    <Property Name="DeleterUserId" Type="Int64" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifierUserId" Type="Int64" />
+    <Property Name="CreationTime" Type="DateTime" Precision="3" />
+    <Property Name="StatusTransfer" Type="Boolean" />
+    <Property Name="TransferDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_CD_DieuKienCheckDuAn_DA_DuAn">
+    <End Role="DA_DuAn" Type="Self.DA_DuAn" Multiplicity="0..1" />
+    <End Role="CD_DieuKienCheckDuAn" Type="Self.CD_DieuKienCheckDuAn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DA_DuAn">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CD_DieuKienCheckDuAn">
+        <PropertyRef Name="DuAnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Lead_StatusLead_Lead">
+    <End Role="Lead" Type="Self.Lead" Multiplicity="1" />
+    <End Role="Lead_Status" Type="Self.Lead_Status" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lead">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Lead_Status">
+        <PropertyRef Name="LeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Lead_GWEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AbpUsers" EntityType="Self.AbpUser" />
+    <EntitySet Name="CD_DieuKienCheckDuAn" EntityType="Self.CD_DieuKienCheckDuAn" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="DA_DuAn" EntityType="Self.DA_DuAn" />
+    <EntitySet Name="DM_BoundCode" EntityType="Self.DM_BoundCode" />
+    <EntitySet Name="DM_DoiTac" EntityType="Self.DM_DoiTac" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Leads" EntityType="Self.Lead" />
+    <EntitySet Name="Lead_Status" EntityType="Self.Lead_Status" />
+    <EntitySet Name="Lead_Version" EntityType="Self.Lead_Version" />
+    <EntitySet Name="CD_BoLocPhanPhoi" EntityType="Self.CD_BoLocPhanPhoi" />
+    <EntitySet Name="CD_CachPhanPhoi" EntityType="Self.CD_CachPhanPhoi" />
+    <EntitySet Name="CD_DieuKienCheckBoundCode" EntityType="Self.CD_DieuKienCheckBoundCode" />
+    <EntitySet Name="CD_LichPhanPhoiLead" EntityType="Self.CD_LichPhanPhoiLead" />
+    <EntitySet Name="CD_PhanPhoiLead" EntityType="Self.CD_PhanPhoiLead" />
+    <EntitySet Name="GW_Tranfer_CRM" EntityType="Self.GW_Tranfer_CRM" />
+    <EntitySet Name="Lead_GW" EntityType="Self.Lead_GW" />
+    <EntitySet Name="Lead_GW_Compare" EntityType="Self.Lead_GW_Compare" />
+    <EntitySet Name="Lead_GW_Compare_copy1" EntityType="Self.Lead_GW_Compare_copy1" />
+    <EntitySet Name="Lead_GW_copy1" EntityType="Self.Lead_GW_copy1" />
+    <EntitySet Name="Lead_GW_Process" EntityType="Self.Lead_GW_Process" />
+    <EntitySet Name="Lead_Import" EntityType="Self.Lead_Import" />
+    <AssociationSet Name="FK_CD_DieuKienCheckDuAn_DA_DuAn" Association="Self.FK_CD_DieuKienCheckDuAn_DA_DuAn">
+      <End Role="DA_DuAn" EntitySet="DA_DuAn" />
+      <End Role="CD_DieuKienCheckDuAn" EntitySet="CD_DieuKienCheckDuAn" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Lead_StatusLead_Lead" Association="Self.FK_Lead_StatusLead_Lead">
+      <End Role="Lead" EntitySet="Leads" />
+      <End Role="Lead_Status" EntitySet="Lead_Status" />
+    </AssociationSet>
+    <EntitySet Name="CD_PhanPhoiChiTiet" EntityType="Lead_GWModel.CD_PhanPhoiChiTiet" />
+  </EntityContainer>
+  <EntityType Name="CD_PhanPhoiChiTiet">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="QuerySoLuong" />
+      <PropertyRef Name="QueryDieuKien" />
+      <PropertyRef Name="SoLuongCauHinh" />
+      <PropertyRef Name="SoLuongDaChuyen" />
+      <PropertyRef Name="SoLuongCanChuyen" />
+      <PropertyRef Name="NgayChuyen" />
+      <PropertyRef Name="CachChuyen" />
+      <PropertyRef Name="LichPhanPhoiId" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuerySoLuong" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="QueryDieuKien" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuongCauHinh" Type="Int32" Nullable="false" />
+    <Property Name="SoLuongDaChuyen" Type="Int32" Nullable="false" />
+    <Property Name="SoLuongCanChuyen" Type="Int32" Nullable="false" />
+    <Property Name="NgayChuyen" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CachChuyen" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreationTime" Type="DateTime" Precision="3" />
+    <Property Name="CreatorUserId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="DeleterUserId" Type="Int32" />
+    <Property Name="DeletionTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModificationTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifierUserId" Type="Int32" />
+    <Property Name="LichPhanPhoiId" Type="Int64" Nullable="false" />
+  </EntityType>
+</Schema>

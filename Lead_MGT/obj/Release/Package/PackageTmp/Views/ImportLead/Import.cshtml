@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Lead_MGTModel.EntityModel.Lead_Import>
+
+
+@foreach (var item in @Model)
+{
+    <tr>
+        <td>
+            <input type="checkbox" class="checkboxes" value="1" />
+        </td>
+        <td>@item.Phone_Number</td>
+        <td>@item.Province_Code</td>
+        <td>@item.CC_Band</td>
+        <td>@item.CC_Limit</td>
+        <td>@item.Scoring_CC</td>
+        <td>@item.UPL_Band</td>
+        <td>@item.UPL_Limit</td>
+        <td>@item.Lai_Suat</td>
+        <td>@item.Scoring_UPL</td>
+        <td>@item.Bound_Code</td>
+        <td>@item.San_Pham</td>
+    </tr>
+}

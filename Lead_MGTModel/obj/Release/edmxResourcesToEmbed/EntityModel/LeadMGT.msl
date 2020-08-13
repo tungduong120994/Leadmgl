@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Lead_GWModelStoreContainer" CdmEntityContainer="Lead_GWEntities3">
+    <EntitySetMapping Name="AbpUsers">
+      <EntityTypeMapping TypeName="Lead_GWModel.AbpUser">
+        <MappingFragment StoreEntitySet="AbpUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="EmailConfirmationCode" ColumnName="EmailConfirmationCode" />
+          <ScalarProperty Name="SaleCode" ColumnName="SaleCode" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="LoaiHopDongId" ColumnName="LoaiHopDongId" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NormalizedEmailAddress" ColumnName="NormalizedEmailAddress" />
+          <ScalarProperty Name="NormalizedUserName" ColumnName="NormalizedUserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordResetCode" ColumnName="PasswordResetCode" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="ProfilePictureId" ColumnName="ProfilePictureId" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="ShouldChangePasswordOnNextLogin" ColumnName="ShouldChangePasswordOnNextLogin" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CD_DieuKienCheckDuAn">
+      <EntityTypeMapping TypeName="Lead_GWModel.CD_DieuKienCheckDuAn">
+        <MappingFragment StoreEntitySet="CD_DieuKienCheckDuAn">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TenantId" ColumnName="TenantId" />
+          <ScalarProperty Name="TenDieuKien" ColumnName="TenDieuKien" />
+          <ScalarProperty Name="PhepTinh" ColumnName="PhepTinh" />
+          <ScalarProperty Name="GiaTri" ColumnName="GiaTri" />
+          <ScalarProperty Name="Tu" ColumnName="Tu" />
+          <ScalarProperty Name="Den" ColumnName="Den" />
+          <ScalarProperty Name="DuAnId" ColumnName="DuAnId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="Lead_GWModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DA_DuAn">
+      <EntityTypeMapping TypeName="Lead_GWModel.DA_DuAn">
+        <MappingFragment StoreEntitySet="DA_DuAn">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TenantId" ColumnName="TenantId" />
+          <ScalarProperty Name="MaDuAn" ColumnName="MaDuAn" />
+          <ScalarProperty Name="TenDuAn" ColumnName="TenDuAn" />
+          <ScalarProperty Name="NgayPheDuyet" ColumnName="NgayPheDuyet" />
+          <ScalarProperty Name="NgayBatDau" ColumnName="NgayBatDau" />
+          <ScalarProperty Name="NgayKetThuc" ColumnName="NgayKetThuc" />
+          <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_BoundCode">
+      <EntityTypeMapping TypeName="Lead_GWModel.DM_BoundCode">
+        <MappingFragment StoreEntitySet="DM_BoundCode">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+          <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+          <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="SanPhamId" ColumnName="SanPhamId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_DoiTac">
+      <EntityTypeMapping TypeName="Lead_GWModel.DM_DoiTac">
+        <MappingFragment StoreEntitySet="DM_DoiTac">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TenantId" ColumnName="TenantId" />
+          <ScalarProperty Name="MaDoiTac" ColumnName="MaDoiTac" />
+          <ScalarProperty Name="TenDoiTac" ColumnName="TenDoiTac" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaSoThue" ColumnName="MaSoThue" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="Lead_GWModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Leads">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead">
+        <MappingFragment StoreEntitySet="Lead">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Band_CC" ColumnName="Band_CC" />
+          <ScalarProperty Name="Band_UPL" ColumnName="Band_UPL" />
+          <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+          <ScalarProperty Name="CC_Limit" ColumnName="CC_Limit" />
+          <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+          <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+          <ScalarProperty Name="Created_Id" ColumnName="Created_Id" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Income_Level" ColumnName="Income_Level" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="Lead_Name" ColumnName="Lead_Name" />
+          <ScalarProperty Name="National_Id" ColumnName="National_Id" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Post_Date" ColumnName="Post_Date" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Province_Code" ColumnName="Province_Code" />
+          <ScalarProperty Name="Score_Range" ColumnName="Score_Range" />
+          <ScalarProperty Name="UPL_Interest" ColumnName="UPL_Interest" />
+          <ScalarProperty Name="UPL_Limit" ColumnName="UPL_Limit" />
+          <ScalarProperty Name="Valid_Date" ColumnName="Valid_Date" />
+          <ScalarProperty Name="Transfer_To" ColumnName="Transfer_To" />
+          <ScalarProperty Name="Transfer_Date" ColumnName="Transfer_Date" />
+          <ScalarProperty Name="District_Code" ColumnName="District_Code" />
+          <ScalarProperty Name="Process_DuplicateID" ColumnName="Process_DuplicateID" />
+          <ScalarProperty Name="Status_DuplicateID" ColumnName="Status_DuplicateID" />
+          <ScalarProperty Name="Description1" ColumnName="Description1" />
+          <ScalarProperty Name="Description2" ColumnName="Description2" />
+          <ScalarProperty Name="Description3" ColumnName="Description3" />
+          <ScalarProperty Name="Description4" ColumnName="Description4" />
+          <ScalarProperty Name="Lead_Code" ColumnName="Lead_Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_Status">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_Status">
+        <MappingFragment StoreEntitySet="Lead_Status">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LeadId" ColumnName="LeadId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuocXuLyId" ColumnName="BuocXuLyId" />
+          <ScalarProperty Name="NhomTrangThaiId" ColumnName="NhomTrangThaiId" />
+          <ScalarProperty Name="TrangThaiId" ColumnName="TrangThaiId" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_Version">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_Version">
+        <MappingFragment StoreEntitySet="Lead_Version">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LeadID" ColumnName="LeadID" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Band_CC" ColumnName="Band_CC" />
+          <ScalarProperty Name="Band_UPL" ColumnName="Band_UPL" />
+          <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+          <ScalarProperty Name="CC_Limit" ColumnName="CC_Limit" />
+          <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+          <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+          <ScalarProperty Name="Created_Id" ColumnName="Created_Id" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Income_Level" ColumnName="Income_Level" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="Lead_Name" ColumnName="Lead_Name" />
+          <ScalarProperty Name="National_Id" ColumnName="National_Id" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Post_Date" ColumnName="Post_Date" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Province_Code" ColumnName="Province_Code" />
+          <ScalarProperty Name="Score_Range" ColumnName="Score_Range" />
+          <ScalarProperty Name="UPL_Interest" ColumnName="UPL_Interest" />
+          <ScalarProperty Name="UPL_Limit" ColumnName="UPL_Limit" />
+          <ScalarProperty Name="Valid_Date" ColumnName="Valid_Date" />
+          <ScalarProperty Name="Transfer_To" ColumnName="Transfer_To" />
+          <ScalarProperty Name="Transfer_Date" ColumnName="Transfer_Date" />
+          <ScalarProperty Name="District_Code" ColumnName="District_Code" />
+          <ScalarProperty Name="Process_DuplicateID" ColumnName="Process_DuplicateID" />
+          <ScalarProperty Name="Status_DuplicateID" ColumnName="Status_DuplicateID" />
+          <ScalarProperty Name="Description1" ColumnName="Description1" />
+          <ScalarProperty Name="Description2" ColumnName="Description2" />
+          <ScalarProperty Name="Description3" ColumnName="Description3" />
+          <ScalarProperty Name="Description4" ColumnName="Description4" />
+          <ScalarProperty Name="Lead_Code" ColumnName="Lead_Code" />
+          <ScalarProperty Name="Lead_GW_Id" ColumnName="Lead_GW_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW_Tranfer_CRM">
+      <EntityTypeMapping TypeName="Lead_GWModel.GW_Tranfer_CRM">
+        <MappingFragment StoreEntitySet="GW_Tranfer_CRM">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+          <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+          <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+          <ScalarProperty Name="cc_code" ColumnName="cc_code" />
+          <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+          <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+          <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="deadline" ColumnName="deadline" />
+          <ScalarProperty Name="distributed" ColumnName="distributed" />
+          <ScalarProperty Name="distributed_by_user_id" ColumnName="distributed_by_user_id" />
+          <ScalarProperty Name="distributed_on_date" ColumnName="distributed_on_date" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="exists" ColumnName="exists" />
+          <ScalarProperty Name="i2b_status" ColumnName="i2b_status" />
+          <ScalarProperty Name="identification_date" ColumnName="identification_date" />
+          <ScalarProperty Name="identification_place" ColumnName="identification_place" />
+          <ScalarProperty Name="income_level" ColumnName="income_level" />
+          <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+          <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+          <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="post_date" ColumnName="post_date" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="score_range" ColumnName="score_range" />
+          <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+          <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+          <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+          <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+          <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+          <ScalarProperty Name="district_code" ColumnName="district_code" />
+          <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+          <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+          <ScalarProperty Name="in_active" ColumnName="in_active" />
+          <ScalarProperty Name="upl_interest_origin" ColumnName="upl_interest_origin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_GW">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW">
+        <MappingFragment StoreEntitySet="Lead_GW">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="leadid" ColumnName="leadid" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+          <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+          <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+          <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+          <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+          <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="exists" ColumnName="exists" />
+          <ScalarProperty Name="income_level" ColumnName="income_level" />
+          <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+          <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+          <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="post_date" ColumnName="post_date" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="score_range" ColumnName="score_range" />
+          <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+          <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+          <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+          <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+          <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+          <ScalarProperty Name="district_code" ColumnName="district_code" />
+          <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+          <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+          <ScalarProperty Name="in_active" ColumnName="in_active" />
+          <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+          <ScalarProperty Name="project" ColumnName="project" />
+          <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_GW_Compare">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_Compare">
+        <MappingFragment StoreEntitySet="Lead_GW_Compare">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="leadid" ColumnName="leadid" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+          <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+          <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+          <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+          <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+          <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="exists" ColumnName="exists" />
+          <ScalarProperty Name="income_level" ColumnName="income_level" />
+          <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+          <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+          <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="post_date" ColumnName="post_date" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="score_range" ColumnName="score_range" />
+          <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+          <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+          <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+          <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+          <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+          <ScalarProperty Name="district_code" ColumnName="district_code" />
+          <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+          <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+          <ScalarProperty Name="in_active" ColumnName="in_active" />
+          <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+          <ScalarProperty Name="project" ColumnName="project" />
+          <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_GW_Compare_copy1">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_Compare_copy1">
+        <MappingFragment StoreEntitySet="Lead_GW_Compare_copy1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="leadid" ColumnName="leadid" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+          <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+          <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+          <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+          <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+          <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="exists" ColumnName="exists" />
+          <ScalarProperty Name="income_level" ColumnName="income_level" />
+          <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+          <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+          <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="post_date" ColumnName="post_date" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="score_range" ColumnName="score_range" />
+          <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+          <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+          <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+          <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+          <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+          <ScalarProperty Name="district_code" ColumnName="district_code" />
+          <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+          <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+          <ScalarProperty Name="in_active" ColumnName="in_active" />
+          <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+          <ScalarProperty Name="project" ColumnName="project" />
+          <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_GW_copy1">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_copy1">
+        <MappingFragment StoreEntitySet="Lead_GW_copy1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="leadid" ColumnName="leadid" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+          <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+          <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+          <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+          <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+          <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="exists" ColumnName="exists" />
+          <ScalarProperty Name="income_level" ColumnName="income_level" />
+          <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+          <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+          <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="post_date" ColumnName="post_date" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="score_range" ColumnName="score_range" />
+          <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+          <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+          <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+          <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+          <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+          <ScalarProperty Name="district_code" ColumnName="district_code" />
+          <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+          <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+          <ScalarProperty Name="in_active" ColumnName="in_active" />
+          <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+          <ScalarProperty Name="project" ColumnName="project" />
+          <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_GW_Process">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_Process">
+        <MappingFragment StoreEntitySet="Lead_GW_Process">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="leadid" ColumnName="leadid" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+          <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+          <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+          <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+          <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+          <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="exists" ColumnName="exists" />
+          <ScalarProperty Name="income_level" ColumnName="income_level" />
+          <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+          <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+          <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="post_date" ColumnName="post_date" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="score_range" ColumnName="score_range" />
+          <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+          <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+          <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+          <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+          <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+          <ScalarProperty Name="district_code" ColumnName="district_code" />
+          <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+          <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+          <ScalarProperty Name="in_active" ColumnName="in_active" />
+          <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+          <ScalarProperty Name="project" ColumnName="project" />
+          <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lead_Import">
+      <EntityTypeMapping TypeName="Lead_GWModel.Lead_Import">
+        <MappingFragment StoreEntitySet="Lead_Import">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Province_Code" ColumnName="Province_Code" />
+          <ScalarProperty Name="CC_Band" ColumnName="CC_Band" />
+          <ScalarProperty Name="CC_Limit" ColumnName="CC_Limit" />
+          <ScalarProperty Name="Scoring_CC" ColumnName="Scoring_CC" />
+          <ScalarProperty Name="UPL_Band" ColumnName="UPL_Band" />
+          <ScalarProperty Name="UPL_Limit" ColumnName="UPL_Limit" />
+          <ScalarProperty Name="Lai_Suat" ColumnName="Lai_Suat" />
+          <ScalarProperty Name="Scoring_UPL" ColumnName="Scoring_UPL" />
+          <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+          <ScalarProperty Name="San_Pham" ColumnName="San_Pham" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="StatusTransfer" ColumnName="StatusTransfer" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CD_BoLocPhanPhoi">
+      <EntityTypeMapping TypeName="Lead_GWModel.CD_BoLocPhanPhoi">
+        <MappingFragment StoreEntitySet="CD_BoLocPhanPhoi">
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Den" ColumnName="Den" />
+          <ScalarProperty Name="Tu" ColumnName="Tu" />
+          <ScalarProperty Name="GiaTri" ColumnName="GiaTri" />
+          <ScalarProperty Name="TenBoLoc" ColumnName="TenBoLoc" />
+          <ScalarProperty Name="PhanPhoiLeadId" ColumnName="PhanPhoiLeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CD_CachPhanPhoi">
+      <EntityTypeMapping TypeName="Lead_GWModel.CD_CachPhanPhoi">
+        <MappingFragment StoreEntitySet="CD_CachPhanPhoi">
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LichPhanPhoi" ColumnName="LichPhanPhoi" />
+          <ScalarProperty Name="PhanPhoiLeadId" ColumnName="PhanPhoiLeadId" />
+          <ScalarProperty Name="TenCachPhanPhoi" ColumnName="TenCachPhanPhoi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CD_DieuKienCheckBoundCode">
+      <EntityTypeMapping TypeName="Lead_GWModel.CD_DieuKienCheckBoundCode">
+        <MappingFragment StoreEntitySet="CD_DieuKienCheckBoundCode">
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BoundCodeCheckId" ColumnName="BoundCodeCheckId" />
+          <ScalarProperty Name="BoundCodeId" ColumnName="BoundCodeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CD_LichPhanPhoiLead">
+      <EntityTypeMapping TypeName="Lead_GWModel.CD_LichPhanPhoiLead">
+        <MappingFragment StoreEntitySet="CD_LichPhanPhoiLead">
+          <ScalarProperty Name="NgayPhanPhoi" ColumnName="NgayPhanPhoi" />
+          <ScalarProperty Name="NamPhanPhoi" ColumnName="NamPhanPhoi" />
+          <ScalarProperty Name="ThangPhanPhoi" ColumnName="ThangPhanPhoi" />
+          <ScalarProperty Name="PhanPhoiLeadId" ColumnName="PhanPhoiLeadId" />
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CachPhanPhoiLeadId" ColumnName="CachPhanPhoiLeadId" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="GioPhanPhoi" ColumnName="GioPhanPhoi" />
+          <ScalarProperty Name="NgayPhanPhoiLead" ColumnName="NgayPhanPhoiLead" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CD_PhanPhoiLead">
+      <EntityTypeMapping TypeName="Lead_GWModel.CD_PhanPhoiLead">
+        <MappingFragment StoreEntitySet="CD_PhanPhoiLead">
+          <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+          <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+          <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+          <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MaChienDich" ColumnName="MaChienDich" />
+          <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+          <ScalarProperty Name="HeThongNhanLead" ColumnName="HeThongNhanLead" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

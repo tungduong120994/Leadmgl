@@ -1,0 +1,6 @@
+D:\QLLead\Lead_MGTValueObject\bin\Debug\Lead_MGTValueObject.dll
+D:\QLLead\Lead_MGTValueObject\bin\Debug\Lead_MGTValueObject.pdb
+D:\QLLead\Lead_MGTValueObject\obj\Debug\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+D:\QLLead\Lead_MGTValueObject\obj\Debug\Lead_MGTValueObject.dll
+D:\QLLead\Lead_MGTValueObject\obj\Debug\Lead_MGTValueObject.pdb
+D:\QLLead\Lead_MGTValueObject\obj\Debug\Lead_MGTValueObject.csprojAssemblyReference.cache

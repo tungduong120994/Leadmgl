@@ -1,0 +1,447 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@section scripHeadLeadSach{
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="/Assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="/Assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link id="style_color" href="/Assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+}
+
+<div class="page-content-wrapper">
+
+    <div class="page-content">
+        <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+        <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        Widget settings form goes here
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn blue">Save changes</button>
+                        <button type="button" class="btn default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <h3 class="page-title">
+            Lead Sạch <small></small>
+        </h3>
+        <div class="page-bar">
+
+            <div class="page-toolbar">
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+                        Actions <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li>
+                            <a href="#">Action</a>
+                        </li>
+                        <li>
+                            <a href="#">Another action</a>
+                        </li>
+                        <li>
+                            <a href="#">Something else here</a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li>
+                            <a href="#">Separated link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- Begin: life time stats -->
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="tab-pane" id="tab_1">
+                            <div class="portlet box blue">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-gift"></i>Bộ Lọc tìm kiếm LEAD sạch
+                                    </div>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse">
+                                        </a>
+                                        <a href="#portlet-config" data-toggle="modal" class="config">
+                                        </a>
+                                        <a href="javascript:;" class="reload">
+                                        </a>
+                                        <a href="javascript:;" class="remove">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <form action="#" class="horizontal-form">
+                                        <div class="form-body">
+                                            <h3 class="form-section">Thông tin chi tiết</h3>
+                                            <div class="row">
+
+                                            </div>
+                                            <div class="row">
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">ValiDate</label>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012" data-date-format="mm/dd/yyyy">
+                                                                <input type="text" class="form-control" id="valiDateFrom">
+                                                                <span class="input-group-addon">
+                                                                    to
+                                                                </span>
+                                                                <input type="text" class="form-control" id="valiDateTo">
+                                                            </div>
+                                                            <!-- /input-group -->
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">PostDate</label>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012" data-date-format="mm/dd/yyyy">
+                                                                <input type="text" class="form-control" id="postDateFrom">
+                                                                <span class="input-group-addon">
+                                                                    to
+                                                                </span>
+                                                                <input type="text" class="form-control" id="postDateTo">
+                                                            </div>
+                                                            <!-- /input-group -->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Bound Code</label>
+                                                        <input id="boundCode" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Province</label>
+                                                        <input id="province" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Dự Án</label>
+                                                        <input id="duAn" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Số điện thoại</label>
+                                                        <input id="phoneNumber" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <!--/span-->
+                                            </div>
+                                        </div>
+                                        <div class="form-actions right">
+                                            <button onclick="serchLeadSach()" type="search" class="btn blue"><i class="fa search"></i> Tìm Kiếm</button>
+                                        </div>
+                                    </form>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <!-- Begin: life time stats -->
+                            <div class="portlet">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class=""></i>List Lead Sạch
+                                    </div>
+                                    <div class="actions">
+
+                                        <div class="btn-group">
+                                            <a class="btn default yellow-stripe dropdown-toggle" href="javascript:;" data-toggle="dropdown">
+                                                <i class="fa fa-share"></i>
+                                                <span class="hidden-480">
+                                                    Tools
+                                                </span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        Export to Excel
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        Export to CSV
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        Export to XML
+                                                    </a>
+                                                </li>
+                                                <li class="divider">
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        Print Invoices
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portlet-body">
+                                    <div class="table-container">
+
+                                        <table class="table table-striped table-bordered table-hover" id="datatable_orders">
+                                            <thead>
+                                                <tr role="row" class="heading">
+                                                    <th width="2%">
+                                                        <input type="checkbox" class="group-checkable">
+                                                    </th>
+                                                    <th width="5%">
+                                                        Số điện thoại
+                                                    </th>
+                                                    <th width="15%">
+                                                        Validate
+                                                    </th>
+                                                    <th width="15%">
+                                                        Mã tỉnh thành
+                                                    </th>
+                                                    <th width="10%">
+                                                        Thang điểm thẻ
+                                                    </th>
+                                                    <th width="10%">
+                                                        Hạn mức thẻ
+                                                    </th>
+                                                    <th width="10%">
+                                                        Hạn mức vay
+                                                    </th>
+                                                    <th width="10%">
+                                                        Bound_Code
+                                                    </th>
+                                                    <th width="10%">
+                                                        Thang điêm vay
+                                                    </th>
+                                                    <th width="10%">
+                                                        Lãi xuất
+                                                    </th>
+
+                                                </tr>
+                                                @*<tr role="row" class="filter">
+                                                        <td></td>
+                                                        <td>
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_id">
+                                                        </td>
+                                                        <td>
+                                                            <div class="input-group date date-picker margin-bottom-5" data-date-format="dd/mm/yyyy">
+                                                                <input type="text" class="form-control form-filter input-sm" readonly name="order_date_from" placeholder="From">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+                                                                </span>
+                                                            </div>
+                                                            <div class="input-group date date-picker" data-date-format="dd/mm/yyyy">
+                                                                <input type="text" class="form-control form-filter input-sm" readonly name="order_date_to" placeholder="To">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_customer_name">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                        </td>
+                                                        <td>
+                                                            <div class="margin-bottom-5">
+                                                                <input type="text" class="form-control form-filter input-sm" name="order_base_price_from" placeholder="From" />
+                                                            </div>
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_base_price_to" placeholder="To" />
+                                                        </td>
+                                                        <td>
+                                                            <div class="margin-bottom-5">
+                                                                <input type="text" class="form-control form-filter input-sm margin-bottom-5 clearfix" name="order_purchase_price_from" placeholder="From" />
+                                                            </div>
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_purchase_price_to" placeholder="To" />
+                                                        </td>
+                                                        <td>
+                                                            <select name="order_status" class="form-control form-filter input-sm">
+                                                                <option value="">Select...</option>
+                                                                <option value="pending">CCNO</option>
+                                                                <option value="closed">CC_MR</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+
+                                                        </td>
+                                                    </tr>*@
+                                            </thead>
+                                            <tbody id="tbLeadSach"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: life time stats -->
+                            <div class="portlet box blue-hoki">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-globe"></i>Datatable with TableTools
+                                    </div>
+                                    <div class="tools">
+                                    </div>
+                                </div>
+                                <div class="portlet-body">
+                                    <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                        <thead>
+                                            <tr role="row" class="heading">
+                                                <th width="2%">
+                                                    <input type="checkbox" class="group-checkable">
+                                                </th>
+                                                <th width="5%">
+                                                    Số điện thoại
+                                                </th>
+                                                <th width="15%">
+                                                    Validate
+                                                </th>
+                                                <th width="15%">
+                                                    Mã tỉnh thành
+                                                </th>
+                                                <th width="10%">
+                                                    Thang điểm thẻ
+                                                </th>
+                                                <th width="10%">
+                                                    Hạn mức thẻ
+                                                </th>
+                                                <th width="10%">
+                                                    Hạn mức vay
+                                                </th>
+                                                <th width="10%">
+                                                    Bound_Code
+                                                </th>
+                                                <th width="10%">
+                                                    Thang điêm vay
+                                                </th>
+                                                <th width="10%">
+                                                    Lãi xuất
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbLeadSach"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- End: life time stats -->
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->
+    </div>
+</div>
+@section scripLeadSachFoot{
+    <script type="text/javascript" src="/Assets/global/plugins/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="/Assets/global/scripts/datatable.js"></script>
+    <script src="/Assets/admin/pages/scripts/ecommerce-orders.js"></script>
+    <script src="/Assets/admin/pages/scripts/table-advanced.js"></script>
+}
+@section scripLeadSachJe{
+    EcommerceOrders.init();
+    TableAdvanced.init();
+}
+@section scripLeadSach{
+    <script>
+    function serchLeadSach() {
+     debugger;
+     var dataObject = JSON.stringify({
+    'Phone_Number': $('#phoneNumber').val(),
+    'Bound_Code': $('#boundCode').val(),
+    'Post_Date_From': $('#postDateFrom').val(),
+    'Post_Date_To': $('#postDateTo').val(),
+    'Province': $('#province').val(),
+    'DuAn': $('#duAn').val(),
+    'Valid_Date_From': $('#valiDateFrom').val(),
+    'Valid_Date_To': $('#valiDateTo').val()
+
+    });
+        $.ajax({
+
+        type: 'POST',
+        url: "@Url.Action("Search", "LeadSach")",
+        contentType: "application/json; charset=utf-8",
+        dataType: 'json',
+        data: dataObject,
+        success: function (result)
+            {
+                //alert("thành công");
+                $('#tbLeadSach').html(result);
+                console.log(result);
+            }
+
+        });
+
+        debugger;
+    }
+    </script>
+
+}

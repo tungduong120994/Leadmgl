@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Lead_MGTValueObject.LeadSachModel.ListLeadSachModel>
+
+
+@foreach (var item in @Model)
+{
+    <tr>
+        <td>
+            <input type="checkbox" class="checkboxes" value="1" />
+        </td>
+        <td>@item.phone_number</td>
+        <td>@item.valid_date</td>
+        <td>@item.province_code</td>
+        <td>@item.band_cc</td>
+        <td>@item.cc_limit</td>
+        <td>@item.upl_limit</td>
+        <td>@item.band_upl</td>
+        <td>@item.bound_code</td>
+        <td>@item.upl_interest</td>
+    </tr>
+}

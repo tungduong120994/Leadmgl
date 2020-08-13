@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A81B059-C793-4878-BFD6-899CA09093E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lead_MGTModel</RootNamespace>
+    <AssemblyName>Lead_MGTModel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\Lead_MGT\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\Lead_MGT\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityModel\AbpUser.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\CD_BoLocPhanPhoi.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\CD_CachPhanPhoi.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\CD_DieuKienCheckBoundCode.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\CD_DieuKienCheckDuAn.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\CD_LichPhanPhoiLead.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\CD_PhanPhoiChiTiet.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\CD_PhanPhoiLead.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\City.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\DA_DuAn.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\DM_BoundCode.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\DM_DoiTac.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Employee.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\GW_Tranfer_CRM.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_GW.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_GW_Compare.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_GW_Compare_copy1.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_GW_copy1.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_GW_Process.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_Import.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_Status.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Lead_Version.cs">
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\MGTMODEL.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MGTMODEL.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\MGTMODEL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MGTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\MGTMODEL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MGTMODEL.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="EntityModel\MGTMODEL.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MGTMODEL.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EntityModel\MGTMODEL.edmx.diagram">
+      <DependentUpon>MGTMODEL.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EntityModel\MGTMODEL.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MGTMODEL.edmx</DependentUpon>
+      <LastGenOutput>MGTMODEL.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntityModel\MGTMODEL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MGTMODEL.edmx</DependentUpon>
+      <LastGenOutput>MGTMODEL.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

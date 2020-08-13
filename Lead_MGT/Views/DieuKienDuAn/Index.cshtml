@@ -1,0 +1,458 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@section scripHeadImportLead{
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/clockface/css/clockface.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/jquery-tags-input/jquery.tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/typeahead/typeahead.css">
+    <style>
+        .table-filter-lead td {
+            vertical-align: middle !important;
+        }
+
+        #ModalFilterList .modal-title {
+            font-weight: bold;
+        }
+
+        .checkbox-inline {
+            min-width: 300px;
+            padding-bottom: 7px;
+            padding-top: 7px;
+        }
+    </style>
+}
+@{
+    int a = ViewBag.BoundCode.Items.Count;
+}
+
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+        <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        Widget settings form goes here
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn blue">Save changes</button>
+                        <button type="button" class="btn default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <h3 class="page-title">
+            Điều Kiện Check Trùng Theo Dự Án <small></small>
+        </h3>
+        <br />
+        <div class="page-bar">
+
+            <div class="page-toolbar">
+                <div class="btn-group pull-right">
+
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- Begin: life time stats -->
+                <div class="portlet">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <!-- Begin: life time stats -->
+                            <div class="portlet">
+                                <div class="portlet-title">
+                                    <div class="tab-pane" id="tab_1">
+                                        <div class="portlet box blue">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="fa fa-gift"></i>Bộ Lọc Thông Tin Dự Án
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="~/Assets/TemplateExcel/Lead.xlsx" download></a>
+                                                    <a href="javascript:;" class="collapse">
+                                                    </a>
+                                                    <a href="#portlet-config" data-toggle="modal" class="config">
+                                                    </a>
+                                                    <a href="javascript:;" class="reload">
+                                                    </a>
+                                                    <a href="javascript:;" class="remove">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="portlet-body form">
+                                                <!-- BEGIN FORM-->
+                                                @using (Html.BeginForm("", "", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                                {
+                                                    <form action="#" class="horizontal-form">
+                                                        <div class="form-body">
+                                                            <h3 class="form-section">Thông tin chi tiết</h3>
+                                                            <div class="row">
+
+                                                            </div>
+                                                            <div class="row">
+
+                                                            </div>
+
+                                                            <!--/row-->
+
+                                                            <div class="row">
+
+                                                                <!--/span-->
+
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-2">Dự Án</label>
+                                                                        <div class="col-md-4">
+                                                                            <select name="duAn" class="form-control input-xlarge select2me" data-placeholder="Chọn Dự Án">
+
+                                                                                <option value="AL">Hợp tác MBF - VPB</option>
+
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <!--/span-->
+
+                                                            </div>
+
+                                                            <!--/row-->
+
+                                                        </div>
+
+                                                    </form>
+                                                    <div class="form-actions right">
+                                                        @*<button onclick="serchLeadSach()" type="search" class="btn blue"><i class="fa"></i>Tìm Kiếm</button>
+                                                            <button onclick="serchLeadSach()" type="submit" class="btn blue"><i class="fa"></i>Sửa</button>
+                                                            <button onclick="serchLeadSach()" type="submit" class="btn blue"><i class="fa "></i>Xóa</button>
+                                                            <button onclick="serchLeadSach()" type="submit" class="btn blue"><i class="fa "></i>Thêm</button>*@
+                                                    </div>
+                                                }
+                                                <!-- END FORM-->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <!-- End: life time stats -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <!-- Begin: life time stats -->
+                            <div class="portlet">
+                                <div class="portlet-title">
+                                    <div class="tab-pane" id="tab_1">
+                                        <div class="portlet box blue">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="fa fa-gift"></i>Cài đặt điều kiện lọc lead
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="~/Assets/TemplateExcel/Lead.xlsx" download></a>
+                                                    <a href="javascript:;" class="collapse">
+                                                    </a>
+                                                    <a href="#portlet-config" data-toggle="modal" class="config">
+                                                    </a>
+                                                    <a href="javascript:;" class="reload">
+                                                    </a>
+                                                    <a href="javascript:;" class="remove">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="portlet-body form">
+                                                <form action="#" class="horizontal-form">
+                                                    <div class="form-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <label class="checkbox-inline"><input id="Phone_Number" type="checkbox" value="Phone_Number">Số điện thoại</label>
+                                                                <label class="checkbox-inline"><input id="Bound_Code" type="checkbox" value="Bound_Code">Boundcode</label><br>
+                                                                <label class="checkbox-inline"><input id="DuAnID" type="checkbox" value="DuAnID">Partner code</label>
+                                                                <label class="checkbox-inline"><input id="Valid_Date" type="checkbox" value="Valid_Date">Validate</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-dismiss="modal" id="btnSaveCauHinh">Save</button>
+
+                                                </div>
+                                            </div>
+                                            <div id="ModalFilterList" class="modal fade" role="dialog">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Định nghĩa trùng Boundcode</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <table class="table table-bordered table-filter-lead">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Boundcode</th>
+                                                                        <th>Boundcode trùng</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @foreach (var item in ViewBag.BoundCode.Items)
+                                                                    {
+                                                                        <tr>
+
+                                                                            <td id="@item.Value">
+                                                                                @item.Text
+                                                                            </td>
+                                                                            <td>
+                                                                                @foreach (var item2 in ViewBag.BoundCode.Items)
+                                                                                {
+                                                                                    <div class="checkbox">
+                                                                                        <label><input id="@item.Value-@item2.Value" type="checkbox" value="@item.Value @item2.Text">@item2.Text</label>
+                                                                                    </div>
+                                                                                }
+
+                                                                            </td>
+
+                                                                        </tr>
+                                                                    }
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info" data-dismiss="modal" id="btnSave">Save</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End: life time stats -->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- End: life time stats -->
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->
+    </div>
+</div>
+
+@section scripImportLeadFoot{
+    <script type="text/javascript" src="/Assets/global/plugins/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/clockface/css/clockface.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/clockface/js/clockface.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/fuelux/js/spinner.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/jquery.input-ip-address-control-1.0.min.js"></script>
+    <script src="/Assets/global/plugins/bootstrap-pwstrength/pwstrength-bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <script src="/Assets/global/plugins/jquery-tags-input/jquery.tagsinput.min.js" type="text/javascript"></script>
+    <script src="/Assets/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+    <script src="/Assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+    <script src="/Assets/global/plugins/typeahead/handlebars.min.js" type="text/javascript"></script>
+    <script src="/Assets/global/plugins/typeahead/typeahead.bundle.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/ckeditor/ckeditor.js"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="/Assets/global/scripts/metronic.js" type="text/javascript"></script>
+    <script src="/Assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+    <script src="/Assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+    <script src="/Assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+
+    <script src="/Assets/admin/pages/scripts/components-pickers.js"></script>
+    <script src="/Assets/admin/pages/scripts/components-form-tools.js"></script>
+    <script src="/Assets/admin/pages/scripts/table-advanced.js"></script>
+}
+@section scripImportLeadJe{
+    ComponentsPickers.init();
+    ComponentsFormTools.init();
+}
+
+@section scripFilterLead{
+    <script type="text/javascript">
+        $('#Bound_Code').on('change', function (e) {
+
+            if (e.target.checked) {
+                debugger;
+                 $.ajax({
+                   type: 'POST',
+                   url: "@Url.Action("LoadBoundCode", "DieuKienDuAn")"  ,
+                     contentType: "application/json; charset=utf-8",
+
+                 }).done(function (data) {
+                     debugger;
+                     for (var i = 0; i < data.length; i++) {
+                          console.log("#"+ data[i].TongID+"");
+                         $("#"+ data[i].TongID+"").parent().attr("class", "checked");
+                         document.getElementById('' + data[i].TongID + '').checked = true;
+                        
+                     }
+                       $('#ModalFilterList').modal();
+
+
+
+                        }
+                    );
+
+
+            }
+        });
+        $(document).ready(function () {
+            debugger
+                  $.ajax({
+                   type: 'POST',
+                   url: "@Url.Action("LoadDieuKien", "DieuKienDuAn")"  ,
+                     contentType: "application/json; charset=utf-8",
+                 }).done(function (data) {
+                     for (var i = 0; i < data.length; i++) {
+                         $("#"+ data[i].TenDieuKien+"").parent().attr("class", "checked");
+                         document.getElementById('' + data[i].TenDieuKien + '').checked = true; 
+                        
+                     }
+                 });
+
+});
+    </script>
+    <script>
+
+
+    $(function () {
+
+        $("#btnSave").click(function () {
+            var listLich = [];
+            for (var i = 1; i <=@a ; i++) {
+                for (var j = 1; j <=@a ; j++)
+                {
+                    if (document.getElementById('' + i + '-' + j + '').checked == true)
+                    {
+                        var obj = {
+
+                                CachGhep: '' + i + '-' + j + ''
+                        }
+                        listLich.push(obj);
+                    }
+                }
+            }
+            var dataObject = JSON.stringify({
+                    listLich,
+            });
+            console.log(dataObject);
+            console.log(listLich);
+                $.ajax({
+                   type: 'POST',
+                   url: "@Url.Action("Save", "DieuKienDuAn")"  ,
+                   contentType: "application/json; charset=utf-8",
+                   data: dataObject,
+                   }).done(function (data) {
+                          alert("Woa Thành công rồi nè")
+                        }
+                    );
+                console.log(dataObject);
+
+            });
+    });
+    $(function () {
+
+        $("#btnSaveCauHinh").click(function () {
+            debugger;
+            var listCauHinh = [];
+            var giaTriPhone_Number;
+            var giaTriValid_Date;
+            var giaTriBound_Code;
+            var giaTriDuAnID;
+            var tenDieuKien;
+            if (document.getElementById("Phone_Number").checked == true) {
+
+                giaTriPhone_Number = "Phone_Number";
+            }
+            if (document.getElementById("Valid_Date").checked == true) {
+
+                giaTriValid_Date = "Valid_Date";
+            }
+            debugger;
+            if (document.getElementById("Bound_Code").checked == true) {
+
+                giaTriBound_Code = "Bound_Code";
+            }
+            if (document.getElementById("DuAnID").checked == true) {
+
+                giaTriDuAnID = "DuAnID";
+            }
+        var dataObject = JSON.stringify({
+                'Phone_Number':giaTriPhone_Number,
+                'Valid_Date': giaTriValid_Date,
+                'Bound_Code': giaTriBound_Code,
+                'DuAnID': giaTriDuAnID,
+        });
+
+            $.ajax({
+                type: 'POST',
+                url: "@Url.Action("SaveCauHinh", "DieuKienDuAn")"  ,
+                contentType: "application/json; charset=utf-8",
+                data: dataObject,
+                }).done(function (data) {
+                        alert("Woa Thành công rồi nè")
+                    }
+                );
+            console.log(dataObject);
+
+        });
+    });
+
+    </script>
+}
+
+

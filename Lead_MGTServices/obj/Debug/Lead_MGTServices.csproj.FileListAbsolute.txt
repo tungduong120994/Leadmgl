@@ -1,0 +1,5 @@
+D:\QLLead\Lead_MGTServices\bin\Debug\Lead_MGTServices.dll
+D:\QLLead\Lead_MGTServices\bin\Debug\Lead_MGTServices.pdb
+D:\QLLead\Lead_MGTServices\obj\Debug\Lead_MGTServices.csproj.CoreCompileInputs.cache
+D:\QLLead\Lead_MGTServices\obj\Debug\Lead_MGTServices.dll
+D:\QLLead\Lead_MGTServices\obj\Debug\Lead_MGTServices.pdb

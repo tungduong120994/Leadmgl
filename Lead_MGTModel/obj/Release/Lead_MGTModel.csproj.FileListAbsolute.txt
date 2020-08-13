@@ -1,0 +1,84 @@
+D:\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll.config
+D:\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll
+D:\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.pdb
+D:\QLLead\Lead_MGTModel\bin\Release\EntityFramework.dll
+D:\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.dll
+D:\QLLead\Lead_MGTModel\bin\Release\EntityFramework.xml
+D:\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.xml
+D:\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csprojAssemblyReference.cache
+D:\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CoreCompileInputs.cache
+D:\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CopyComplete
+D:\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.dll
+D:\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CopyComplete
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csprojAssemblyReference.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csprojAssemblyReference.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CoreCompileInputs.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CopyComplete
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CopyComplete
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CoreCompileInputs.cache
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CopyComplete
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CopyComplete
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\Lead_MGTModel.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\bin\Release\EntityFramework.SqlServer.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CoreCompileInputs.cache
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csproj.CopyComplete
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTModel\obj\Release\Lead_MGTModel.csprojAssemblyReference.cache

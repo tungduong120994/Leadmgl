@@ -1,0 +1,12 @@
+D:\QLLead\Lead_MGTModel\bin\Debug\Lead_MGTModel.dll.config
+D:\QLLead\Lead_MGTModel\bin\Debug\Lead_MGTModel.dll
+D:\QLLead\Lead_MGTModel\bin\Debug\Lead_MGTModel.pdb
+D:\QLLead\Lead_MGTModel\bin\Debug\EntityFramework.dll
+D:\QLLead\Lead_MGTModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\QLLead\Lead_MGTModel\bin\Debug\EntityFramework.xml
+D:\QLLead\Lead_MGTModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\QLLead\Lead_MGTModel\obj\Debug\Lead_MGTModel.csproj.CoreCompileInputs.cache
+D:\QLLead\Lead_MGTModel\obj\Debug\Lead_MGTModel.csproj.CopyComplete
+D:\QLLead\Lead_MGTModel\obj\Debug\Lead_MGTModel.dll
+D:\QLLead\Lead_MGTModel\obj\Debug\Lead_MGTModel.pdb
+D:\QLLead\Lead_MGTModel\obj\Debug\Lead_MGTModel.csprojAssemblyReference.cache

@@ -1,0 +1,42 @@
+D:\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.dll
+D:\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.pdb
+D:\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csprojAssemblyReference.cache
+D:\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+D:\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.dll
+D:\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csprojAssemblyReference.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csprojAssemblyReference.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTValueObject\bin\Release\Lead_MGTValueObject.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csproj.CoreCompileInputs.cache
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTValueObject\obj\Release\Lead_MGTValueObject.csprojAssemblyReference.cache

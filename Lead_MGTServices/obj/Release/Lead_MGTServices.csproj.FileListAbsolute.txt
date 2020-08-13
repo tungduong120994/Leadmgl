@@ -1,0 +1,29 @@
+D:\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.dll
+D:\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.pdb
+D:\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csprojAssemblyReference.cache
+D:\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csproj.CoreCompileInputs.cache
+D:\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.dll
+D:\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csproj.CoreCompileInputs.cache
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTServices\bin\Release\Lead_MGTServices.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csproj.CoreCompileInputs.cache
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGTServices\obj\Release\Lead_MGTServices.csprojAssemblyReference.cache

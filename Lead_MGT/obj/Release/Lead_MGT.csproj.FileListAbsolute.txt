@@ -1,0 +1,853 @@
+D:\QLLead\Lead_MGT\bin\Lead_MGT.dll.config
+D:\QLLead\Lead_MGT\bin\Lead_MGT.dll
+D:\QLLead\Lead_MGT\bin\Lead_MGT.pdb
+D:\QLLead\Lead_MGT\bin\roslyn\csc.exe
+D:\QLLead\Lead_MGT\bin\roslyn\csc.exe.config
+D:\QLLead\Lead_MGT\bin\roslyn\csc.rsp
+D:\QLLead\Lead_MGT\bin\roslyn\csi.exe
+D:\QLLead\Lead_MGT\bin\roslyn\csi.exe.config
+D:\QLLead\Lead_MGT\bin\roslyn\csi.rsp
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.Managed.Core.targets
+D:\QLLead\Lead_MGT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\QLLead\Lead_MGT\bin\roslyn\System.AppContext.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Collections.Immutable.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Console.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.IO.Compression.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Reflection.Metadata.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Security.AccessControl.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Security.Claims.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Security.Principal.Windows.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.ValueTuple.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Xml.XmlDocument.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.dll
+D:\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\QLLead\Lead_MGT\bin\roslyn\vbc.exe
+D:\QLLead\Lead_MGT\bin\roslyn\vbc.exe.config
+D:\QLLead\Lead_MGT\bin\roslyn\vbc.rsp
+D:\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe
+D:\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe.config
+D:\QLLead\Lead_MGT\bin\Antlr3.Runtime.dll
+D:\QLLead\Lead_MGT\bin\EntityFramework.dll
+D:\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.dll
+D:\QLLead\Lead_MGT\bin\ExcelDataReader.dll
+D:\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll
+D:\QLLead\Lead_MGT\bin\Lead_MGTModel.dll
+D:\QLLead\Lead_MGT\bin\Lead_MGTValueObject.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.Web.Infrastructure.dll
+D:\QLLead\Lead_MGT\bin\Newtonsoft.Json.dll
+D:\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.dll
+D:\QLLead\Lead_MGT\bin\System.Web.Helpers.dll
+D:\QLLead\Lead_MGT\bin\System.Web.Http.dll
+D:\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.dll
+D:\QLLead\Lead_MGT\bin\System.Web.Mvc.dll
+D:\QLLead\Lead_MGT\bin\System.Web.Optimization.dll
+D:\QLLead\Lead_MGT\bin\System.Web.Razor.dll
+D:\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.dll
+D:\QLLead\Lead_MGT\bin\System.Web.WebPages.dll
+D:\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.dll
+D:\QLLead\Lead_MGT\bin\WebGrease.dll
+D:\QLLead\Lead_MGT\bin\Lead_MGTBusiness.pdb
+D:\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll.config
+D:\QLLead\Lead_MGT\bin\Lead_MGTModel.pdb
+D:\QLLead\Lead_MGT\bin\Lead_MGTModel.dll.config
+D:\QLLead\Lead_MGT\bin\Lead_MGTValueObject.pdb
+D:\QLLead\Lead_MGT\bin\EntityFramework.xml
+D:\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.xml
+D:\QLLead\Lead_MGT\bin\ExcelDataReader.pdb
+D:\QLLead\Lead_MGT\bin\ExcelDataReader.xml
+D:\QLLead\Lead_MGT\bin\Newtonsoft.Json.xml
+D:\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.xml
+D:\QLLead\Lead_MGT\bin\System.Web.Helpers.xml
+D:\QLLead\Lead_MGT\bin\System.Web.Http.xml
+D:\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.xml
+D:\QLLead\Lead_MGT\bin\System.Web.Mvc.xml
+D:\QLLead\Lead_MGT\bin\System.Web.Optimization.xml
+D:\QLLead\Lead_MGT\bin\System.Web.Razor.xml
+D:\QLLead\Lead_MGT\bin\System.Web.WebPages.xml
+D:\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.xml
+D:\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.xml
+D:\QLLead\Lead_MGT\bin\Antlr3.Runtime.pdb
+D:\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\QLLead\Lead_MGT\obj\Release\Lead_MGT.csprojAssemblyReference.cache
+D:\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CoreCompileInputs.cache
+D:\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CopyComplete
+D:\QLLead\Lead_MGT\obj\Release\Lead_MGT.dll
+D:\QLLead\Lead_MGT\obj\Release\Lead_MGT.pdb
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.dll
+D:\QLLead\Lead_MGT\bin\System.Buffers.dll
+D:\QLLead\Lead_MGT\bin\System.Memory.dll
+D:\QLLead\Lead_MGT\bin\System.Numerics.Vectors.dll
+D:\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.dll
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.xml
+D:\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.xml
+D:\QLLead\Lead_MGT\bin\System.Buffers.xml
+D:\QLLead\Lead_MGT\bin\System.Memory.xml
+D:\QLLead\Lead_MGT\bin\System.Numerics.Vectors.xml
+D:\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.rsp
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.rsp
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.AppContext.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Console.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Claims.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.rsp
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Buffers.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Memory.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\WebGrease.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Buffers.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Memory.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CopyComplete
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.rsp
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.rsp
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.AppContext.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Console.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Compression.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Claims.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.ValueTuple.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.rsp
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\WebGrease.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll.config
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.pdb
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csprojAssemblyReference.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CoreCompileInputs.cache
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CopyComplete
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.dll
+C:\Users\duongpt3t\Desktop\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.rsp
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.rsp
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.AppContext.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Console.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Claims.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.rsp
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\WebGrease.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll.config
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.pdb
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CopyComplete
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.dll
+C:\Users\tranh\Downloads\QLLead (1)\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.rsp
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.rsp
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.AppContext.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Console.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Compression.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Claims.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.ValueTuple.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.rsp
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Buffers.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Memory.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\WebGrease.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll.config
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Buffers.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Memory.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.pdb
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csprojAssemblyReference.cache
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CoreCompileInputs.cache
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CopyComplete
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.dll
+C:\Users\duongpt3t\Downloads\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.rsp
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.rsp
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.AppContext.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Console.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Claims.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.rsp
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\WebGrease.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll.config
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.pdb
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csprojAssemblyReference.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CoreCompileInputs.cache
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CopyComplete
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.dll
+C:\Users\tranh\Downloads\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGT.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.exe.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csc.rsp
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.exe.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\csi.rsp
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.Managed.Core.targets
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.AppContext.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Collections.Immutable.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Console.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Compression.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.IO.Pipes.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Reflection.Metadata.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.AccessControl.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Claims.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Security.Principal.Windows.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.ValueTuple.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.exe.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\vbc.rsp
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\roslyn\VBCSCompiler.exe.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Web.Infrastructure.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\WebGrease.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTBusiness.dll.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTModel.dll.config
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Lead_MGTValueObject.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\EntityFramework.SqlServer.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\ExcelDataReader.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Primitives.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Net.Http.Headers.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Buffers.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Memory.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Numerics.Vectors.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Text.Encodings.Web.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Newtonsoft.Json.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Net.Http.Formatting.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Helpers.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Http.WebHost.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Mvc.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Optimization.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.Razor.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Deployment.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\System.Web.WebPages.Razor.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Antlr3.Runtime.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csprojAssemblyReference.cache
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CoreCompileInputs.cache
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.csproj.CopyComplete
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\obj\Release\Lead_MGT.pdb
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Caching.Abstractions.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.IdentityModel.Logging.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.IdentityModel.Tokens.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.Extensions.Caching.Abstractions.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.IdentityModel.Logging.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Microsoft.IdentityModel.Tokens.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Syncfusion.Compression.Base.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Syncfusion.Licensing.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Syncfusion.XlsIO.Base.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Syncfusion.Compression.Base.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Syncfusion.XlsIO.Base.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\log4net.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\log4net.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\BouncyCastle.Crypto.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Google.Protobuf.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\MySql.Data.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Renci.SshNet.dll
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Google.Protobuf.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\MySql.Data.xml
+D:\PROJECT\QLLead\QLLead\QLLead\Lead_MGT\bin\Renci.SshNet.xml

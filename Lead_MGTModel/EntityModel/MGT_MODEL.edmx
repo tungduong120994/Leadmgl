@@ -1,0 +1,2458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Lead_GWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AbpUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CreationTime" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="DeleterUserId" Type="bigint" />
+          <Property Name="DeletionTime" Type="datetime2" Precision="7" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="EmailConfirmationCode" Type="nvarchar" MaxLength="328" />
+          <Property Name="SaleCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="LoaiHopDongId" Type="int" />
+          <Property Name="Gender" Type="int" />
+          <Property Name="Birthday" Type="datetime2" Precision="7" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastModificationTime" Type="datetime2" Precision="7" />
+          <Property Name="LastModifierUserId" Type="bigint" />
+          <Property Name="LockoutEndDateUtc" Type="datetime2" Precision="7" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="NormalizedEmailAddress" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="NormalizedUserName" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="PasswordResetCode" Type="nvarchar" MaxLength="328" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProfilePictureId" Type="uniqueidentifier" />
+          <Property Name="SecurityStamp" Type="nvarchar" MaxLength="128" />
+          <Property Name="ShouldChangePasswordOnNextLogin" Type="bit" Nullable="false" />
+          <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.CD_BoLocPhanPhoi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CD_BoLocPhanPhoi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PhanPhoiLeadId" Type="bigint" />
+          <Property Name="TenBoLoc" Type="nvarchar" MaxLength="50" />
+          <Property Name="GiaTri" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tu" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Den" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="CreatorUserId" Type="int" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="DeleterUserId" Type="int" />
+          <Property Name="DeletionTime" Type="datetime" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="LastModifierUserId" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.CD_CachPhanPhoi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CD_CachPhanPhoi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenCachPhanPhoi" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhanPhoiLeadId" Type="bigint" />
+          <Property Name="LichPhanPhoi" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="CreatorUserId" Type="int" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="DeleterUserId" Type="int" />
+          <Property Name="DeletionTime" Type="datetime" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="LastModifierUserId" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.CD_DieuKienCheckBoundCode' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CD_DieuKienCheckBoundCode">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="BoundCodeId" />
+            <PropertyRef Name="BoundCodeCheckId" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BoundCodeId" Type="bigint" Nullable="false" />
+          <Property Name="BoundCodeCheckId" Type="bigint" Nullable="false" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="CreatorUserId" Type="int" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="DeleterUserId" Type="int" />
+          <Property Name="DeletionTime" Type="datetime" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="LastModifierUserId" Type="int" />
+        </EntityType>
+        <EntityType Name="CD_DieuKienCheckDuAn">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantId" Type="int" />
+          <Property Name="TenDieuKien" Type="nvarchar" MaxLength="255" />
+          <Property Name="PhepTinh" Type="nvarchar" MaxLength="255" />
+          <Property Name="GiaTri" Type="nvarchar" MaxLength="255" />
+          <Property Name="Tu" Type="nvarchar" MaxLength="255" />
+          <Property Name="Den" Type="nvarchar" MaxLength="255" />
+          <Property Name="DuAnId" Type="int" />
+          <Property Name="CreationTime" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="DeleterUserId" Type="bigint" />
+          <Property Name="DeletionTime" Type="datetime2" Precision="7" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastModificationTime" Type="datetime2" Precision="7" />
+          <Property Name="LastModifierUserId" Type="bigint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.CD_LichPhanPhoiLead' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CD_LichPhanPhoiLead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NgayPhanPhoiLead" Type="date" />
+          <Property Name="GioPhanPhoi" Type="int" />
+          <Property Name="SoLuong" Type="int" />
+          <Property Name="CachPhanPhoiLeadId" Type="bigint" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="CreatorUserId" Type="int" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="DeleterUserId" Type="int" />
+          <Property Name="DeletionTime" Type="datetime" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="LastModifierUserId" Type="int" />
+          <Property Name="PhanPhoiLeadId" Type="bigint" />
+          <Property Name="ThangPhanPhoi" Type="int" />
+          <Property Name="NamPhanPhoi" Type="int" />
+          <Property Name="NgayPhanPhoi" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.CD_PhanPhoiLead' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CD_PhanPhoiLead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HeThongNhanLead" Type="nvarchar" MaxLength="50" />
+          <Property Name="DuAnID" Type="bigint" />
+          <Property Name="MaChienDich" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="CreatorUserId" Type="int" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="DeleterUserId" Type="int" />
+          <Property Name="DeletionTime" Type="datetime" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="LastModifierUserId" Type="int" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="CityID" />
+          </Key>
+          <Property Name="CityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CityName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="DA_DuAn">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantId" Type="int" />
+          <Property Name="MaDuAn" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenDuAn" Type="nvarchar" MaxLength="255" />
+          <Property Name="NgayPheDuyet" Type="date" Nullable="false" />
+          <Property Name="NgayBatDau" Type="date" Nullable="false" />
+          <Property Name="NgayKetThuc" Type="date" Nullable="false" />
+          <Property Name="DoiTacId" Type="int" />
+          <Property Name="NoiDung" Type="nvarchar" MaxLength="4000" />
+          <Property Name="TrangThai" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="4000" />
+          <Property Name="CreationTime" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="DeleterUserId" Type="bigint" />
+          <Property Name="DeletionTime" Type="datetime2" Precision="7" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastModificationTime" Type="datetime2" Precision="7" />
+          <Property Name="LastModifierUserId" Type="bigint" />
+        </EntityType>
+        <EntityType Name="DM_BoundCode">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Bound_Code" Type="nvarchar" MaxLength="100" />
+          <Property Name="DuAnID" Type="int" />
+          <Property Name="DoiTacId" Type="int" Nullable="false" />
+          <Property Name="CreationTime" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="DeleterUserId" Type="bigint" />
+          <Property Name="DeletionTime" Type="datetime2" Precision="7" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastModificationTime" Type="datetime2" Precision="7" />
+          <Property Name="LastModifierUserId" Type="bigint" />
+          <Property Name="SanPhamId" Type="int" />
+        </EntityType>
+        <EntityType Name="DM_DoiTac">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantId" Type="int" />
+          <Property Name="MaDoiTac" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenDoiTac" Type="nvarchar" MaxLength="255" />
+          <Property Name="SoDienThoai" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="255" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="4000" />
+          <Property Name="MaSoThue" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreationTime" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="DeleterUserId" Type="bigint" />
+          <Property Name="DeletionTime" Type="datetime2" Precision="7" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastModificationTime" Type="datetime2" Precision="7" />
+          <Property Name="LastModifierUserId" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CityID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Salary" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.GW_Tranfer_CRM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="GW_Tranfer_CRM">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="address2" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_cc" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_upl" Type="nvarchar" MaxLength="250" />
+          <Property Name="bound_code" Type="nvarchar" MaxLength="250" />
+          <Property Name="cc_code" Type="nvarchar" MaxLength="250" />
+          <Property Name="cc_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="created_by_user_id" Type="int" />
+          <Property Name="created_on_date" Type="datetime" />
+          <Property Name="cust_limit_id" Type="nvarchar" MaxLength="250" />
+          <Property Name="date_of_birth" Type="datetime" />
+          <Property Name="deadline" Type="datetime" />
+          <Property Name="distributed" Type="smallint" />
+          <Property Name="distributed_by_user_id" Type="int" />
+          <Property Name="distributed_on_date" Type="datetime" />
+          <Property Name="email" Type="nvarchar" MaxLength="250" />
+          <Property Name="exists" Type="smallint" />
+          <Property Name="i2b_status" Type="nvarchar" MaxLength="250" />
+          <Property Name="identification_date" Type="datetime" />
+          <Property Name="identification_place" Type="nvarchar" MaxLength="250" />
+          <Property Name="income_level" Type="int" />
+          <Property Name="last_modified_by_user_id" Type="int" />
+          <Property Name="last_modified_on_date" Type="datetime" />
+          <Property Name="lead_name" Type="nvarchar" MaxLength="250" />
+          <Property Name="limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="partner_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="phone_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_date" Type="datetime" />
+          <Property Name="post_id" Type="bigint" />
+          <Property Name="province" Type="nvarchar" MaxLength="50" />
+          <Property Name="score_range" Type="nvarchar" MaxLength="50" />
+          <Property Name="upl_interest" Type="float" />
+          <Property Name="upl_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="date" />
+          <Property Name="dwh_exists" Type="int" />
+          <Property Name="transfer_to" Type="nvarchar" MaxLength="50" />
+          <Property Name="province_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="district_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="tower_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="transfer_date" Type="datetime" />
+          <Property Name="in_active" Type="int" />
+          <Property Name="upl_interest_origin" Type="float" />
+        </EntityType>
+        <EntityType Name="Lead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="Band_CC" Type="nvarchar" MaxLength="250" />
+          <Property Name="Band_UPL" Type="nvarchar" MaxLength="250" />
+          <Property Name="Bound_Code" Type="nvarchar" MaxLength="250" />
+          <Property Name="CC_Limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DoiTacId" Type="bigint" />
+          <Property Name="DuAnID" Type="bigint" />
+          <Property Name="Created_Id" Type="int" />
+          <Property Name="Created_Date" Type="datetime" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" />
+          <Property Name="Income_Level" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="LastModifierUserId" Type="int" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="Lead_Name" Type="nvarchar" MaxLength="250" />
+          <Property Name="National_Id" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone_Number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Post_Date" Type="datetime" />
+          <Property Name="Province" Type="nvarchar" MaxLength="50" />
+          <Property Name="Province_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Score_Range" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPL_Interest" Type="float" />
+          <Property Name="UPL_Limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Valid_Date" Type="date" />
+          <Property Name="Transfer_To" Type="nvarchar" MaxLength="50" />
+          <Property Name="Transfer_Date" Type="datetime" />
+          <Property Name="District_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Process_DuplicateID" Type="int" />
+          <Property Name="Status_DuplicateID" Type="int" />
+          <Property Name="Description1" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description3" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description4" Type="nvarchar" MaxLength="250" />
+          <Property Name="Lead_Code" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.Lead_GW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lead_GW">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="leadid" Type="bigint" Nullable="false" />
+          <Property Name="address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_cc" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_upl" Type="nvarchar" MaxLength="250" />
+          <Property Name="bound_code" Type="nvarchar" MaxLength="250" />
+          <Property Name="cc_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="created_by_user_id" Type="int" />
+          <Property Name="created_on_date" Type="datetime" />
+          <Property Name="cust_limit_id" Type="nvarchar" MaxLength="250" />
+          <Property Name="email" Type="nvarchar" MaxLength="250" />
+          <Property Name="exists" Type="smallint" />
+          <Property Name="income_level" Type="int" />
+          <Property Name="last_modified_by_user_id" Type="int" />
+          <Property Name="last_modified_on_date" Type="datetime" />
+          <Property Name="lead_name" Type="nvarchar" MaxLength="250" />
+          <Property Name="limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="partner_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="phone_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_date" Type="datetime" />
+          <Property Name="post_id" Type="bigint" />
+          <Property Name="province" Type="nvarchar" MaxLength="50" />
+          <Property Name="score_range" Type="nvarchar" MaxLength="50" />
+          <Property Name="upl_interest" Type="float" />
+          <Property Name="upl_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="date" />
+          <Property Name="dwh_exists" Type="int" />
+          <Property Name="transfer_to" Type="nvarchar" MaxLength="50" />
+          <Property Name="province_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="district_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="tower_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="transfer_date" Type="datetime" />
+          <Property Name="in_active" Type="int" />
+          <Property Name="gr_bound_code" Type="int" />
+          <Property Name="project" Type="nvarchar" MaxLength="50" />
+          <Property Name="gr_project" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.Lead_GW_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lead_GW_Compare">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="leadid" Type="bigint" Nullable="false" />
+          <Property Name="address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_cc" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_upl" Type="nvarchar" MaxLength="250" />
+          <Property Name="bound_code" Type="nvarchar" MaxLength="250" />
+          <Property Name="cc_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="created_by_user_id" Type="int" />
+          <Property Name="created_on_date" Type="datetime" />
+          <Property Name="cust_limit_id" Type="nvarchar" MaxLength="250" />
+          <Property Name="email" Type="nvarchar" MaxLength="250" />
+          <Property Name="exists" Type="smallint" />
+          <Property Name="income_level" Type="int" />
+          <Property Name="last_modified_by_user_id" Type="int" />
+          <Property Name="last_modified_on_date" Type="datetime" />
+          <Property Name="lead_name" Type="nvarchar" MaxLength="250" />
+          <Property Name="limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="partner_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="phone_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_date" Type="datetime" />
+          <Property Name="post_id" Type="bigint" />
+          <Property Name="province" Type="nvarchar" MaxLength="50" />
+          <Property Name="score_range" Type="nvarchar" MaxLength="50" />
+          <Property Name="upl_interest" Type="float" />
+          <Property Name="upl_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="date" />
+          <Property Name="dwh_exists" Type="int" />
+          <Property Name="transfer_to" Type="nvarchar" MaxLength="50" />
+          <Property Name="province_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="district_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="tower_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="transfer_date" Type="datetime" />
+          <Property Name="in_active" Type="int" />
+          <Property Name="gr_bound_code" Type="int" />
+          <Property Name="project" Type="nvarchar" MaxLength="50" />
+          <Property Name="gr_project" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.Lead_GW_Compare_copy1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lead_GW_Compare_copy1">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="leadid" Type="bigint" Nullable="false" />
+          <Property Name="address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_cc" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_upl" Type="nvarchar" MaxLength="250" />
+          <Property Name="bound_code" Type="nvarchar" MaxLength="250" />
+          <Property Name="cc_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="created_by_user_id" Type="int" />
+          <Property Name="created_on_date" Type="datetime" />
+          <Property Name="cust_limit_id" Type="nvarchar" MaxLength="250" />
+          <Property Name="email" Type="nvarchar" MaxLength="250" />
+          <Property Name="exists" Type="smallint" />
+          <Property Name="income_level" Type="int" />
+          <Property Name="last_modified_by_user_id" Type="int" />
+          <Property Name="last_modified_on_date" Type="datetime" />
+          <Property Name="lead_name" Type="nvarchar" MaxLength="250" />
+          <Property Name="limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="partner_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="phone_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_date" Type="datetime" />
+          <Property Name="post_id" Type="bigint" />
+          <Property Name="province" Type="nvarchar" MaxLength="50" />
+          <Property Name="score_range" Type="nvarchar" MaxLength="50" />
+          <Property Name="upl_interest" Type="float" />
+          <Property Name="upl_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="date" />
+          <Property Name="dwh_exists" Type="int" />
+          <Property Name="transfer_to" Type="nvarchar" MaxLength="50" />
+          <Property Name="province_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="district_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="tower_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="transfer_date" Type="datetime" />
+          <Property Name="in_active" Type="int" />
+          <Property Name="gr_bound_code" Type="int" />
+          <Property Name="project" Type="nvarchar" MaxLength="50" />
+          <Property Name="gr_project" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.Lead_GW_copy1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lead_GW_copy1">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="leadid" Type="bigint" Nullable="false" />
+          <Property Name="address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_cc" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_upl" Type="nvarchar" MaxLength="250" />
+          <Property Name="bound_code" Type="nvarchar" MaxLength="250" />
+          <Property Name="cc_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="created_by_user_id" Type="int" />
+          <Property Name="created_on_date" Type="datetime" />
+          <Property Name="cust_limit_id" Type="nvarchar" MaxLength="250" />
+          <Property Name="email" Type="nvarchar" MaxLength="250" />
+          <Property Name="exists" Type="smallint" />
+          <Property Name="income_level" Type="int" />
+          <Property Name="last_modified_by_user_id" Type="int" />
+          <Property Name="last_modified_on_date" Type="datetime" />
+          <Property Name="lead_name" Type="nvarchar" MaxLength="250" />
+          <Property Name="limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="partner_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="phone_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_date" Type="datetime" />
+          <Property Name="post_id" Type="bigint" />
+          <Property Name="province" Type="nvarchar" MaxLength="50" />
+          <Property Name="score_range" Type="nvarchar" MaxLength="50" />
+          <Property Name="upl_interest" Type="float" />
+          <Property Name="upl_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="date" />
+          <Property Name="dwh_exists" Type="int" />
+          <Property Name="transfer_to" Type="nvarchar" MaxLength="50" />
+          <Property Name="province_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="district_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="tower_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="transfer_date" Type="datetime" />
+          <Property Name="in_active" Type="int" />
+          <Property Name="gr_bound_code" Type="int" />
+          <Property Name="project" Type="nvarchar" MaxLength="50" />
+          <Property Name="gr_project" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.Lead_GW_Process' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lead_GW_Process">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="leadid" Type="bigint" Nullable="false" />
+          <Property Name="address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_cc" Type="nvarchar" MaxLength="250" />
+          <Property Name="band_upl" Type="nvarchar" MaxLength="250" />
+          <Property Name="bound_code" Type="nvarchar" MaxLength="250" />
+          <Property Name="cc_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="created_by_user_id" Type="int" />
+          <Property Name="created_on_date" Type="datetime" />
+          <Property Name="cust_limit_id" Type="nvarchar" MaxLength="250" />
+          <Property Name="email" Type="nvarchar" MaxLength="250" />
+          <Property Name="exists" Type="smallint" />
+          <Property Name="income_level" Type="int" />
+          <Property Name="last_modified_by_user_id" Type="int" />
+          <Property Name="last_modified_on_date" Type="datetime" />
+          <Property Name="lead_name" Type="nvarchar" MaxLength="250" />
+          <Property Name="limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="partner_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="phone_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_date" Type="datetime" />
+          <Property Name="post_id" Type="bigint" />
+          <Property Name="province" Type="nvarchar" MaxLength="50" />
+          <Property Name="score_range" Type="nvarchar" MaxLength="50" />
+          <Property Name="upl_interest" Type="float" />
+          <Property Name="upl_limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="date" />
+          <Property Name="dwh_exists" Type="int" />
+          <Property Name="transfer_to" Type="nvarchar" MaxLength="50" />
+          <Property Name="province_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="district_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="tower_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="transfer_date" Type="datetime" />
+          <Property Name="in_active" Type="int" />
+          <Property Name="gr_bound_code" Type="int" />
+          <Property Name="project" Type="nvarchar" MaxLength="50" />
+          <Property Name="gr_project" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Lead_GW.dbo.Lead_Import' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lead_Import">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Phone_Number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Province_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="CC_Band" Type="nvarchar" MaxLength="50" />
+          <Property Name="CC_Limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Scoring_CC" Type="date" />
+          <Property Name="UPL_Band" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPL_Limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Lai_Suat" Type="nvarchar" MaxLength="50" />
+          <Property Name="Scoring_UPL" Type="date" />
+          <Property Name="Bound_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="San_Pham" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="DeleterUserId" Type="bigint" />
+          <Property Name="DeletionTime" Type="datetime" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="LastModifierUserId" Type="bigint" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="StatusTransfer" Type="bit" />
+          <Property Name="TransferDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Lead_Status">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LeadId" Type="bigint" Nullable="false" />
+          <Property Name="UserId" Type="bigint" />
+          <Property Name="BuocXuLyId" Type="int" Nullable="false" />
+          <Property Name="NhomTrangThaiId" Type="int" Nullable="false" />
+          <Property Name="TrangThaiId" Type="int" Nullable="false" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="4000" />
+          <Property Name="NoiDung" Type="ntext" />
+          <Property Name="CreationTime" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="DeleterUserId" Type="bigint" />
+          <Property Name="DeletionTime" Type="datetime2" Precision="7" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastModificationTime" Type="datetime2" Precision="7" />
+          <Property Name="LastModifierUserId" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Lead_Version">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LeadID" Type="bigint" />
+          <Property Name="Address1" Type="nvarchar" MaxLength="250" />
+          <Property Name="Band_CC" Type="nvarchar" MaxLength="250" />
+          <Property Name="Band_UPL" Type="nvarchar" MaxLength="250" />
+          <Property Name="Bound_Code" Type="nvarchar" MaxLength="250" />
+          <Property Name="CC_Limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DoiTacId" Type="bigint" />
+          <Property Name="DuAnID" Type="bigint" />
+          <Property Name="Created_Id" Type="int" />
+          <Property Name="Created_Date" Type="datetime" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" />
+          <Property Name="Income_Level" Type="int" />
+          <Property Name="LastModifierUserId" Type="int" />
+          <Property Name="LastModificationTime" Type="datetime" />
+          <Property Name="Lead_Name" Type="nvarchar" MaxLength="250" />
+          <Property Name="National_Id" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone_Number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Post_Date" Type="datetime" />
+          <Property Name="Province" Type="nvarchar" MaxLength="50" />
+          <Property Name="Province_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Score_Range" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPL_Interest" Type="float" />
+          <Property Name="UPL_Limit" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Valid_Date" Type="date" />
+          <Property Name="Transfer_To" Type="nvarchar" MaxLength="50" />
+          <Property Name="Transfer_Date" Type="datetime" />
+          <Property Name="District_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Process_DuplicateID" Type="int" />
+          <Property Name="Status_DuplicateID" Type="int" />
+          <Property Name="Description1" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description3" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description4" Type="nvarchar" MaxLength="250" />
+          <Property Name="Lead_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Lead_GW_Id" Type="bigint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Lead_GW.dbo.Province_maping' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Province_maping">
+          <Property Name="id" Type="bigint" />
+          <Property Name="name" Type="nvarchar" MaxLength="250" />
+          <Property Name="area_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="area_name" Type="nvarchar" MaxLength="250" />
+          <Property Name="isactive" Type="bit" />
+          <Property Name="source" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Lead_GW.dbo.temp' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="temp">
+          <Property Name="id" Type="bigint" />
+          <Property Name="dupliacte" Type="int" />
+        </EntityType>-->
+        <Association Name="FK_CD_DieuKienCheckDuAn_DA_DuAn">
+          <End Role="DA_DuAn" Type="Self.DA_DuAn" Multiplicity="0..1" />
+          <End Role="CD_DieuKienCheckDuAn" Type="Self.CD_DieuKienCheckDuAn" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DA_DuAn">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CD_DieuKienCheckDuAn">
+              <PropertyRef Name="DuAnId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lead_StatusLead_Lead">
+          <End Role="Lead" Type="Self.Lead" Multiplicity="1" />
+          <End Role="Lead_Status" Type="Self.Lead_Status" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lead">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Lead_Status">
+              <PropertyRef Name="LeadId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Delete_Lead" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GW_Tranfer_CRM_JOB" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="insert_Lead" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="LeadSach_TimKiem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Phone_Number" Type="bigint" Mode="In" />
+          <Parameter Name="Bound_Code" Type="nvarchar" Mode="In" />
+          <Parameter Name="Post_Date_From" Type="nvarchar" Mode="In" />
+          <Parameter Name="Post_Date_To" Type="varchar" Mode="In" />
+          <Parameter Name="Province" Type="varchar" Mode="In" />
+          <Parameter Name="Valid_Date_From" Type="nvarchar" Mode="In" />
+          <Parameter Name="Valid_Date_To" Type="nvarchar" Mode="In" />
+          <Parameter Name="DuAn" Type="nvarchar" Mode="In" />
+          <Parameter Name="PageNum" Type="int" Mode="In" />
+          <Parameter Name="PageSize" Type="int" Mode="In" />
+          <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Update_Dedup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Update_GrLead" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Update_GrProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="Lead_GWModelStoreContainer">
+          <EntitySet Name="AbpUsers" EntityType="Self.AbpUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CD_DieuKienCheckDuAn" EntityType="Self.CD_DieuKienCheckDuAn" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DA_DuAn" EntityType="Self.DA_DuAn" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_BoundCode" EntityType="Self.DM_BoundCode" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_DoiTac" EntityType="Self.DM_DoiTac" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lead" EntityType="Self.Lead" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lead_Status" EntityType="Self.Lead_Status" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lead_Version" EntityType="Self.Lead_Version" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CD_BoLocPhanPhoi" EntityType="Self.CD_BoLocPhanPhoi" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CD_BoLocPhanPhoi].[Id] AS [Id], 
+    [CD_BoLocPhanPhoi].[PhanPhoiLeadId] AS [PhanPhoiLeadId], 
+    [CD_BoLocPhanPhoi].[TenBoLoc] AS [TenBoLoc], 
+    [CD_BoLocPhanPhoi].[GiaTri] AS [GiaTri], 
+    [CD_BoLocPhanPhoi].[Tu] AS [Tu], 
+    [CD_BoLocPhanPhoi].[Den] AS [Den], 
+    [CD_BoLocPhanPhoi].[IsActive] AS [IsActive], 
+    [CD_BoLocPhanPhoi].[CreationTime] AS [CreationTime], 
+    [CD_BoLocPhanPhoi].[CreatorUserId] AS [CreatorUserId], 
+    [CD_BoLocPhanPhoi].[IsDeleted] AS [IsDeleted], 
+    [CD_BoLocPhanPhoi].[DeleterUserId] AS [DeleterUserId], 
+    [CD_BoLocPhanPhoi].[DeletionTime] AS [DeletionTime], 
+    [CD_BoLocPhanPhoi].[LastModificationTime] AS [LastModificationTime], 
+    [CD_BoLocPhanPhoi].[LastModifierUserId] AS [LastModifierUserId]
+    FROM [dbo].[CD_BoLocPhanPhoi] AS [CD_BoLocPhanPhoi]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CD_CachPhanPhoi" EntityType="Self.CD_CachPhanPhoi" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CD_CachPhanPhoi].[Id] AS [Id], 
+    [CD_CachPhanPhoi].[TenCachPhanPhoi] AS [TenCachPhanPhoi], 
+    [CD_CachPhanPhoi].[PhanPhoiLeadId] AS [PhanPhoiLeadId], 
+    [CD_CachPhanPhoi].[LichPhanPhoi] AS [LichPhanPhoi], 
+    [CD_CachPhanPhoi].[IsActive] AS [IsActive], 
+    [CD_CachPhanPhoi].[CreationTime] AS [CreationTime], 
+    [CD_CachPhanPhoi].[CreatorUserId] AS [CreatorUserId], 
+    [CD_CachPhanPhoi].[IsDeleted] AS [IsDeleted], 
+    [CD_CachPhanPhoi].[DeleterUserId] AS [DeleterUserId], 
+    [CD_CachPhanPhoi].[DeletionTime] AS [DeletionTime], 
+    [CD_CachPhanPhoi].[LastModificationTime] AS [LastModificationTime], 
+    [CD_CachPhanPhoi].[LastModifierUserId] AS [LastModifierUserId]
+    FROM [dbo].[CD_CachPhanPhoi] AS [CD_CachPhanPhoi]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CD_DieuKienCheckBoundCode" EntityType="Self.CD_DieuKienCheckBoundCode" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CD_DieuKienCheckBoundCode].[Id] AS [Id], 
+    [CD_DieuKienCheckBoundCode].[BoundCodeId] AS [BoundCodeId], 
+    [CD_DieuKienCheckBoundCode].[BoundCodeCheckId] AS [BoundCodeCheckId], 
+    [CD_DieuKienCheckBoundCode].[IsActive] AS [IsActive], 
+    [CD_DieuKienCheckBoundCode].[CreationTime] AS [CreationTime], 
+    [CD_DieuKienCheckBoundCode].[CreatorUserId] AS [CreatorUserId], 
+    [CD_DieuKienCheckBoundCode].[IsDeleted] AS [IsDeleted], 
+    [CD_DieuKienCheckBoundCode].[DeleterUserId] AS [DeleterUserId], 
+    [CD_DieuKienCheckBoundCode].[DeletionTime] AS [DeletionTime], 
+    [CD_DieuKienCheckBoundCode].[LastModificationTime] AS [LastModificationTime], 
+    [CD_DieuKienCheckBoundCode].[LastModifierUserId] AS [LastModifierUserId]
+    FROM [dbo].[CD_DieuKienCheckBoundCode] AS [CD_DieuKienCheckBoundCode]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CD_LichPhanPhoiLead" EntityType="Self.CD_LichPhanPhoiLead" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CD_LichPhanPhoiLead].[Id] AS [Id], 
+    [CD_LichPhanPhoiLead].[NgayPhanPhoiLead] AS [NgayPhanPhoiLead], 
+    [CD_LichPhanPhoiLead].[GioPhanPhoi] AS [GioPhanPhoi], 
+    [CD_LichPhanPhoiLead].[SoLuong] AS [SoLuong], 
+    [CD_LichPhanPhoiLead].[CachPhanPhoiLeadId] AS [CachPhanPhoiLeadId], 
+    [CD_LichPhanPhoiLead].[IsActive] AS [IsActive], 
+    [CD_LichPhanPhoiLead].[CreationTime] AS [CreationTime], 
+    [CD_LichPhanPhoiLead].[CreatorUserId] AS [CreatorUserId], 
+    [CD_LichPhanPhoiLead].[IsDeleted] AS [IsDeleted], 
+    [CD_LichPhanPhoiLead].[DeleterUserId] AS [DeleterUserId], 
+    [CD_LichPhanPhoiLead].[DeletionTime] AS [DeletionTime], 
+    [CD_LichPhanPhoiLead].[LastModificationTime] AS [LastModificationTime], 
+    [CD_LichPhanPhoiLead].[LastModifierUserId] AS [LastModifierUserId], 
+    [CD_LichPhanPhoiLead].[PhanPhoiLeadId] AS [PhanPhoiLeadId], 
+    [CD_LichPhanPhoiLead].[ThangPhanPhoi] AS [ThangPhanPhoi], 
+    [CD_LichPhanPhoiLead].[NamPhanPhoi] AS [NamPhanPhoi], 
+    [CD_LichPhanPhoiLead].[NgayPhanPhoi] AS [NgayPhanPhoi]
+    FROM [dbo].[CD_LichPhanPhoiLead] AS [CD_LichPhanPhoiLead]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CD_PhanPhoiLead" EntityType="Self.CD_PhanPhoiLead" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CD_PhanPhoiLead].[Id] AS [Id], 
+    [CD_PhanPhoiLead].[HeThongNhanLead] AS [HeThongNhanLead], 
+    [CD_PhanPhoiLead].[DuAnID] AS [DuAnID], 
+    [CD_PhanPhoiLead].[MaChienDich] AS [MaChienDich], 
+    [CD_PhanPhoiLead].[IsActive] AS [IsActive], 
+    [CD_PhanPhoiLead].[CreationTime] AS [CreationTime], 
+    [CD_PhanPhoiLead].[CreatorUserId] AS [CreatorUserId], 
+    [CD_PhanPhoiLead].[IsDeleted] AS [IsDeleted], 
+    [CD_PhanPhoiLead].[DeleterUserId] AS [DeleterUserId], 
+    [CD_PhanPhoiLead].[DeletionTime] AS [DeletionTime], 
+    [CD_PhanPhoiLead].[LastModificationTime] AS [LastModificationTime], 
+    [CD_PhanPhoiLead].[LastModifierUserId] AS [LastModifierUserId]
+    FROM [dbo].[CD_PhanPhoiLead] AS [CD_PhanPhoiLead]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="GW_Tranfer_CRM" EntityType="Self.GW_Tranfer_CRM" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [GW_Tranfer_CRM].[id] AS [id], 
+    [GW_Tranfer_CRM].[address1] AS [address1], 
+    [GW_Tranfer_CRM].[address2] AS [address2], 
+    [GW_Tranfer_CRM].[band_cc] AS [band_cc], 
+    [GW_Tranfer_CRM].[band_upl] AS [band_upl], 
+    [GW_Tranfer_CRM].[bound_code] AS [bound_code], 
+    [GW_Tranfer_CRM].[cc_code] AS [cc_code], 
+    [GW_Tranfer_CRM].[cc_limit] AS [cc_limit], 
+    [GW_Tranfer_CRM].[company_id] AS [company_id], 
+    [GW_Tranfer_CRM].[created_by_user_id] AS [created_by_user_id], 
+    [GW_Tranfer_CRM].[created_on_date] AS [created_on_date], 
+    [GW_Tranfer_CRM].[cust_limit_id] AS [cust_limit_id], 
+    [GW_Tranfer_CRM].[date_of_birth] AS [date_of_birth], 
+    [GW_Tranfer_CRM].[deadline] AS [deadline], 
+    [GW_Tranfer_CRM].[distributed] AS [distributed], 
+    [GW_Tranfer_CRM].[distributed_by_user_id] AS [distributed_by_user_id], 
+    [GW_Tranfer_CRM].[distributed_on_date] AS [distributed_on_date], 
+    [GW_Tranfer_CRM].[email] AS [email], 
+    [GW_Tranfer_CRM].[exists] AS [exists], 
+    [GW_Tranfer_CRM].[i2b_status] AS [i2b_status], 
+    [GW_Tranfer_CRM].[identification_date] AS [identification_date], 
+    [GW_Tranfer_CRM].[identification_place] AS [identification_place], 
+    [GW_Tranfer_CRM].[income_level] AS [income_level], 
+    [GW_Tranfer_CRM].[last_modified_by_user_id] AS [last_modified_by_user_id], 
+    [GW_Tranfer_CRM].[last_modified_on_date] AS [last_modified_on_date], 
+    [GW_Tranfer_CRM].[lead_name] AS [lead_name], 
+    [GW_Tranfer_CRM].[limit] AS [limit], 
+    [GW_Tranfer_CRM].[national_id_number] AS [national_id_number], 
+    [GW_Tranfer_CRM].[partner_id] AS [partner_id], 
+    [GW_Tranfer_CRM].[phone_number] AS [phone_number], 
+    [GW_Tranfer_CRM].[post_date] AS [post_date], 
+    [GW_Tranfer_CRM].[post_id] AS [post_id], 
+    [GW_Tranfer_CRM].[province] AS [province], 
+    [GW_Tranfer_CRM].[score_range] AS [score_range], 
+    [GW_Tranfer_CRM].[upl_interest] AS [upl_interest], 
+    [GW_Tranfer_CRM].[upl_limit] AS [upl_limit], 
+    [GW_Tranfer_CRM].[valid_date] AS [valid_date], 
+    [GW_Tranfer_CRM].[dwh_exists] AS [dwh_exists], 
+    [GW_Tranfer_CRM].[transfer_to] AS [transfer_to], 
+    [GW_Tranfer_CRM].[province_code] AS [province_code], 
+    [GW_Tranfer_CRM].[district_code] AS [district_code], 
+    [GW_Tranfer_CRM].[tower_code] AS [tower_code], 
+    [GW_Tranfer_CRM].[transfer_date] AS [transfer_date], 
+    [GW_Tranfer_CRM].[in_active] AS [in_active], 
+    [GW_Tranfer_CRM].[upl_interest_origin] AS [upl_interest_origin]
+    FROM [dbo].[GW_Tranfer_CRM] AS [GW_Tranfer_CRM]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lead_GW" EntityType="Self.Lead_GW" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lead_GW].[id] AS [id], 
+    [Lead_GW].[leadid] AS [leadid], 
+    [Lead_GW].[address1] AS [address1], 
+    [Lead_GW].[band_cc] AS [band_cc], 
+    [Lead_GW].[band_upl] AS [band_upl], 
+    [Lead_GW].[bound_code] AS [bound_code], 
+    [Lead_GW].[cc_limit] AS [cc_limit], 
+    [Lead_GW].[company_id] AS [company_id], 
+    [Lead_GW].[created_by_user_id] AS [created_by_user_id], 
+    [Lead_GW].[created_on_date] AS [created_on_date], 
+    [Lead_GW].[cust_limit_id] AS [cust_limit_id], 
+    [Lead_GW].[email] AS [email], 
+    [Lead_GW].[exists] AS [exists], 
+    [Lead_GW].[income_level] AS [income_level], 
+    [Lead_GW].[last_modified_by_user_id] AS [last_modified_by_user_id], 
+    [Lead_GW].[last_modified_on_date] AS [last_modified_on_date], 
+    [Lead_GW].[lead_name] AS [lead_name], 
+    [Lead_GW].[limit] AS [limit], 
+    [Lead_GW].[national_id_number] AS [national_id_number], 
+    [Lead_GW].[partner_id] AS [partner_id], 
+    [Lead_GW].[phone_number] AS [phone_number], 
+    [Lead_GW].[post_date] AS [post_date], 
+    [Lead_GW].[post_id] AS [post_id], 
+    [Lead_GW].[province] AS [province], 
+    [Lead_GW].[score_range] AS [score_range], 
+    [Lead_GW].[upl_interest] AS [upl_interest], 
+    [Lead_GW].[upl_limit] AS [upl_limit], 
+    [Lead_GW].[valid_date] AS [valid_date], 
+    [Lead_GW].[dwh_exists] AS [dwh_exists], 
+    [Lead_GW].[transfer_to] AS [transfer_to], 
+    [Lead_GW].[province_code] AS [province_code], 
+    [Lead_GW].[district_code] AS [district_code], 
+    [Lead_GW].[tower_code] AS [tower_code], 
+    [Lead_GW].[transfer_date] AS [transfer_date], 
+    [Lead_GW].[in_active] AS [in_active], 
+    [Lead_GW].[gr_bound_code] AS [gr_bound_code], 
+    [Lead_GW].[project] AS [project], 
+    [Lead_GW].[gr_project] AS [gr_project]
+    FROM [dbo].[Lead_GW] AS [Lead_GW]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lead_GW_Compare" EntityType="Self.Lead_GW_Compare" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lead_GW_Compare].[id] AS [id], 
+    [Lead_GW_Compare].[leadid] AS [leadid], 
+    [Lead_GW_Compare].[address1] AS [address1], 
+    [Lead_GW_Compare].[band_cc] AS [band_cc], 
+    [Lead_GW_Compare].[band_upl] AS [band_upl], 
+    [Lead_GW_Compare].[bound_code] AS [bound_code], 
+    [Lead_GW_Compare].[cc_limit] AS [cc_limit], 
+    [Lead_GW_Compare].[company_id] AS [company_id], 
+    [Lead_GW_Compare].[created_by_user_id] AS [created_by_user_id], 
+    [Lead_GW_Compare].[created_on_date] AS [created_on_date], 
+    [Lead_GW_Compare].[cust_limit_id] AS [cust_limit_id], 
+    [Lead_GW_Compare].[email] AS [email], 
+    [Lead_GW_Compare].[exists] AS [exists], 
+    [Lead_GW_Compare].[income_level] AS [income_level], 
+    [Lead_GW_Compare].[last_modified_by_user_id] AS [last_modified_by_user_id], 
+    [Lead_GW_Compare].[last_modified_on_date] AS [last_modified_on_date], 
+    [Lead_GW_Compare].[lead_name] AS [lead_name], 
+    [Lead_GW_Compare].[limit] AS [limit], 
+    [Lead_GW_Compare].[national_id_number] AS [national_id_number], 
+    [Lead_GW_Compare].[partner_id] AS [partner_id], 
+    [Lead_GW_Compare].[phone_number] AS [phone_number], 
+    [Lead_GW_Compare].[post_date] AS [post_date], 
+    [Lead_GW_Compare].[post_id] AS [post_id], 
+    [Lead_GW_Compare].[province] AS [province], 
+    [Lead_GW_Compare].[score_range] AS [score_range], 
+    [Lead_GW_Compare].[upl_interest] AS [upl_interest], 
+    [Lead_GW_Compare].[upl_limit] AS [upl_limit], 
+    [Lead_GW_Compare].[valid_date] AS [valid_date], 
+    [Lead_GW_Compare].[dwh_exists] AS [dwh_exists], 
+    [Lead_GW_Compare].[transfer_to] AS [transfer_to], 
+    [Lead_GW_Compare].[province_code] AS [province_code], 
+    [Lead_GW_Compare].[district_code] AS [district_code], 
+    [Lead_GW_Compare].[tower_code] AS [tower_code], 
+    [Lead_GW_Compare].[transfer_date] AS [transfer_date], 
+    [Lead_GW_Compare].[in_active] AS [in_active], 
+    [Lead_GW_Compare].[gr_bound_code] AS [gr_bound_code], 
+    [Lead_GW_Compare].[project] AS [project], 
+    [Lead_GW_Compare].[gr_project] AS [gr_project]
+    FROM [dbo].[Lead_GW_Compare] AS [Lead_GW_Compare]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lead_GW_Compare_copy1" EntityType="Self.Lead_GW_Compare_copy1" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lead_GW_Compare_copy1].[id] AS [id], 
+    [Lead_GW_Compare_copy1].[leadid] AS [leadid], 
+    [Lead_GW_Compare_copy1].[address1] AS [address1], 
+    [Lead_GW_Compare_copy1].[band_cc] AS [band_cc], 
+    [Lead_GW_Compare_copy1].[band_upl] AS [band_upl], 
+    [Lead_GW_Compare_copy1].[bound_code] AS [bound_code], 
+    [Lead_GW_Compare_copy1].[cc_limit] AS [cc_limit], 
+    [Lead_GW_Compare_copy1].[company_id] AS [company_id], 
+    [Lead_GW_Compare_copy1].[created_by_user_id] AS [created_by_user_id], 
+    [Lead_GW_Compare_copy1].[created_on_date] AS [created_on_date], 
+    [Lead_GW_Compare_copy1].[cust_limit_id] AS [cust_limit_id], 
+    [Lead_GW_Compare_copy1].[email] AS [email], 
+    [Lead_GW_Compare_copy1].[exists] AS [exists], 
+    [Lead_GW_Compare_copy1].[income_level] AS [income_level], 
+    [Lead_GW_Compare_copy1].[last_modified_by_user_id] AS [last_modified_by_user_id], 
+    [Lead_GW_Compare_copy1].[last_modified_on_date] AS [last_modified_on_date], 
+    [Lead_GW_Compare_copy1].[lead_name] AS [lead_name], 
+    [Lead_GW_Compare_copy1].[limit] AS [limit], 
+    [Lead_GW_Compare_copy1].[national_id_number] AS [national_id_number], 
+    [Lead_GW_Compare_copy1].[partner_id] AS [partner_id], 
+    [Lead_GW_Compare_copy1].[phone_number] AS [phone_number], 
+    [Lead_GW_Compare_copy1].[post_date] AS [post_date], 
+    [Lead_GW_Compare_copy1].[post_id] AS [post_id], 
+    [Lead_GW_Compare_copy1].[province] AS [province], 
+    [Lead_GW_Compare_copy1].[score_range] AS [score_range], 
+    [Lead_GW_Compare_copy1].[upl_interest] AS [upl_interest], 
+    [Lead_GW_Compare_copy1].[upl_limit] AS [upl_limit], 
+    [Lead_GW_Compare_copy1].[valid_date] AS [valid_date], 
+    [Lead_GW_Compare_copy1].[dwh_exists] AS [dwh_exists], 
+    [Lead_GW_Compare_copy1].[transfer_to] AS [transfer_to], 
+    [Lead_GW_Compare_copy1].[province_code] AS [province_code], 
+    [Lead_GW_Compare_copy1].[district_code] AS [district_code], 
+    [Lead_GW_Compare_copy1].[tower_code] AS [tower_code], 
+    [Lead_GW_Compare_copy1].[transfer_date] AS [transfer_date], 
+    [Lead_GW_Compare_copy1].[in_active] AS [in_active], 
+    [Lead_GW_Compare_copy1].[gr_bound_code] AS [gr_bound_code], 
+    [Lead_GW_Compare_copy1].[project] AS [project], 
+    [Lead_GW_Compare_copy1].[gr_project] AS [gr_project]
+    FROM [dbo].[Lead_GW_Compare_copy1] AS [Lead_GW_Compare_copy1]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lead_GW_copy1" EntityType="Self.Lead_GW_copy1" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lead_GW_copy1].[id] AS [id], 
+    [Lead_GW_copy1].[leadid] AS [leadid], 
+    [Lead_GW_copy1].[address1] AS [address1], 
+    [Lead_GW_copy1].[band_cc] AS [band_cc], 
+    [Lead_GW_copy1].[band_upl] AS [band_upl], 
+    [Lead_GW_copy1].[bound_code] AS [bound_code], 
+    [Lead_GW_copy1].[cc_limit] AS [cc_limit], 
+    [Lead_GW_copy1].[company_id] AS [company_id], 
+    [Lead_GW_copy1].[created_by_user_id] AS [created_by_user_id], 
+    [Lead_GW_copy1].[created_on_date] AS [created_on_date], 
+    [Lead_GW_copy1].[cust_limit_id] AS [cust_limit_id], 
+    [Lead_GW_copy1].[email] AS [email], 
+    [Lead_GW_copy1].[exists] AS [exists], 
+    [Lead_GW_copy1].[income_level] AS [income_level], 
+    [Lead_GW_copy1].[last_modified_by_user_id] AS [last_modified_by_user_id], 
+    [Lead_GW_copy1].[last_modified_on_date] AS [last_modified_on_date], 
+    [Lead_GW_copy1].[lead_name] AS [lead_name], 
+    [Lead_GW_copy1].[limit] AS [limit], 
+    [Lead_GW_copy1].[national_id_number] AS [national_id_number], 
+    [Lead_GW_copy1].[partner_id] AS [partner_id], 
+    [Lead_GW_copy1].[phone_number] AS [phone_number], 
+    [Lead_GW_copy1].[post_date] AS [post_date], 
+    [Lead_GW_copy1].[post_id] AS [post_id], 
+    [Lead_GW_copy1].[province] AS [province], 
+    [Lead_GW_copy1].[score_range] AS [score_range], 
+    [Lead_GW_copy1].[upl_interest] AS [upl_interest], 
+    [Lead_GW_copy1].[upl_limit] AS [upl_limit], 
+    [Lead_GW_copy1].[valid_date] AS [valid_date], 
+    [Lead_GW_copy1].[dwh_exists] AS [dwh_exists], 
+    [Lead_GW_copy1].[transfer_to] AS [transfer_to], 
+    [Lead_GW_copy1].[province_code] AS [province_code], 
+    [Lead_GW_copy1].[district_code] AS [district_code], 
+    [Lead_GW_copy1].[tower_code] AS [tower_code], 
+    [Lead_GW_copy1].[transfer_date] AS [transfer_date], 
+    [Lead_GW_copy1].[in_active] AS [in_active], 
+    [Lead_GW_copy1].[gr_bound_code] AS [gr_bound_code], 
+    [Lead_GW_copy1].[project] AS [project], 
+    [Lead_GW_copy1].[gr_project] AS [gr_project]
+    FROM [dbo].[Lead_GW_copy1] AS [Lead_GW_copy1]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lead_GW_Process" EntityType="Self.Lead_GW_Process" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lead_GW_Process].[id] AS [id], 
+    [Lead_GW_Process].[leadid] AS [leadid], 
+    [Lead_GW_Process].[address1] AS [address1], 
+    [Lead_GW_Process].[band_cc] AS [band_cc], 
+    [Lead_GW_Process].[band_upl] AS [band_upl], 
+    [Lead_GW_Process].[bound_code] AS [bound_code], 
+    [Lead_GW_Process].[cc_limit] AS [cc_limit], 
+    [Lead_GW_Process].[company_id] AS [company_id], 
+    [Lead_GW_Process].[created_by_user_id] AS [created_by_user_id], 
+    [Lead_GW_Process].[created_on_date] AS [created_on_date], 
+    [Lead_GW_Process].[cust_limit_id] AS [cust_limit_id], 
+    [Lead_GW_Process].[email] AS [email], 
+    [Lead_GW_Process].[exists] AS [exists], 
+    [Lead_GW_Process].[income_level] AS [income_level], 
+    [Lead_GW_Process].[last_modified_by_user_id] AS [last_modified_by_user_id], 
+    [Lead_GW_Process].[last_modified_on_date] AS [last_modified_on_date], 
+    [Lead_GW_Process].[lead_name] AS [lead_name], 
+    [Lead_GW_Process].[limit] AS [limit], 
+    [Lead_GW_Process].[national_id_number] AS [national_id_number], 
+    [Lead_GW_Process].[partner_id] AS [partner_id], 
+    [Lead_GW_Process].[phone_number] AS [phone_number], 
+    [Lead_GW_Process].[post_date] AS [post_date], 
+    [Lead_GW_Process].[post_id] AS [post_id], 
+    [Lead_GW_Process].[province] AS [province], 
+    [Lead_GW_Process].[score_range] AS [score_range], 
+    [Lead_GW_Process].[upl_interest] AS [upl_interest], 
+    [Lead_GW_Process].[upl_limit] AS [upl_limit], 
+    [Lead_GW_Process].[valid_date] AS [valid_date], 
+    [Lead_GW_Process].[dwh_exists] AS [dwh_exists], 
+    [Lead_GW_Process].[transfer_to] AS [transfer_to], 
+    [Lead_GW_Process].[province_code] AS [province_code], 
+    [Lead_GW_Process].[district_code] AS [district_code], 
+    [Lead_GW_Process].[tower_code] AS [tower_code], 
+    [Lead_GW_Process].[transfer_date] AS [transfer_date], 
+    [Lead_GW_Process].[in_active] AS [in_active], 
+    [Lead_GW_Process].[gr_bound_code] AS [gr_bound_code], 
+    [Lead_GW_Process].[project] AS [project], 
+    [Lead_GW_Process].[gr_project] AS [gr_project]
+    FROM [dbo].[Lead_GW_Process] AS [Lead_GW_Process]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lead_Import" EntityType="Self.Lead_Import" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lead_Import].[Id] AS [Id], 
+    [Lead_Import].[Phone_Number] AS [Phone_Number], 
+    [Lead_Import].[Province_Code] AS [Province_Code], 
+    [Lead_Import].[CC_Band] AS [CC_Band], 
+    [Lead_Import].[CC_Limit] AS [CC_Limit], 
+    [Lead_Import].[Scoring_CC] AS [Scoring_CC], 
+    [Lead_Import].[UPL_Band] AS [UPL_Band], 
+    [Lead_Import].[UPL_Limit] AS [UPL_Limit], 
+    [Lead_Import].[Lai_Suat] AS [Lai_Suat], 
+    [Lead_Import].[Scoring_UPL] AS [Scoring_UPL], 
+    [Lead_Import].[Bound_Code] AS [Bound_Code], 
+    [Lead_Import].[San_Pham] AS [San_Pham], 
+    [Lead_Import].[CreatorUserId] AS [CreatorUserId], 
+    [Lead_Import].[DeleterUserId] AS [DeleterUserId], 
+    [Lead_Import].[DeletionTime] AS [DeletionTime], 
+    [Lead_Import].[IsDeleted] AS [IsDeleted], 
+    [Lead_Import].[LastModificationTime] AS [LastModificationTime], 
+    [Lead_Import].[LastModifierUserId] AS [LastModifierUserId], 
+    [Lead_Import].[CreationTime] AS [CreationTime], 
+    [Lead_Import].[StatusTransfer] AS [StatusTransfer], 
+    [Lead_Import].[TransferDate] AS [TransferDate]
+    FROM [dbo].[Lead_Import] AS [Lead_Import]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_CD_DieuKienCheckDuAn_DA_DuAn" Association="Self.FK_CD_DieuKienCheckDuAn_DA_DuAn">
+            <End Role="DA_DuAn" EntitySet="DA_DuAn" />
+            <End Role="CD_DieuKienCheckDuAn" EntitySet="CD_DieuKienCheckDuAn" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lead_StatusLead_Lead" Association="Self.FK_Lead_StatusLead_Lead">
+            <End Role="Lead" EntitySet="Lead" />
+            <End Role="Lead_Status" EntitySet="Lead_Status" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Lead_GWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AbpUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CreationTime" Type="DateTime" Nullable="false" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="DeleterUserId" Type="Int64" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="EmailAddress" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EmailConfirmationCode" Type="String" MaxLength="328" FixedLength="false" Unicode="true" />
+          <Property Name="SaleCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LoaiHopDongId" Type="Int32" />
+          <Property Name="Gender" Type="Int32" />
+          <Property Name="Birthday" Type="DateTime" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int64" />
+          <Property Name="LockoutEndDateUtc" Type="DateTime" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NormalizedEmailAddress" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NormalizedUserName" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PasswordResetCode" Type="String" MaxLength="328" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ProfilePictureId" Type="Guid" />
+          <Property Name="SecurityStamp" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ShouldChangePasswordOnNextLogin" Type="Boolean" Nullable="false" />
+          <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CD_DieuKienCheckDuAn">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantId" Type="Int32" />
+          <Property Name="TenDieuKien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PhepTinh" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="GiaTri" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Tu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Den" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DuAnId" Type="Int32" />
+          <Property Name="CreationTime" Type="DateTime" Nullable="false" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="DeleterUserId" Type="Int64" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int64" />
+          <NavigationProperty Name="DA_DuAn" Relationship="Self.FK_CD_DieuKienCheckDuAn_DA_DuAn" FromRole="CD_DieuKienCheckDuAn" ToRole="DA_DuAn" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="CityID" />
+          </Key>
+          <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CityName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DA_DuAn">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantId" Type="Int32" />
+          <Property Name="MaDuAn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TenDuAn" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NgayPheDuyet" Type="DateTime" Nullable="false" />
+          <Property Name="NgayBatDau" Type="DateTime" Nullable="false" />
+          <Property Name="NgayKetThuc" Type="DateTime" Nullable="false" />
+          <Property Name="DoiTacId" Type="Int32" />
+          <Property Name="NoiDung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="TrangThai" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="CreationTime" Type="DateTime" Nullable="false" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="DeleterUserId" Type="Int64" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int64" />
+          <NavigationProperty Name="CD_DieuKienCheckDuAn" Relationship="Self.FK_CD_DieuKienCheckDuAn_DA_DuAn" FromRole="DA_DuAn" ToRole="CD_DieuKienCheckDuAn" />
+        </EntityType>
+        <EntityType Name="DM_BoundCode">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Bound_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DuAnID" Type="Int32" />
+          <Property Name="DoiTacId" Type="Int32" Nullable="false" />
+          <Property Name="CreationTime" Type="DateTime" Nullable="false" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="DeleterUserId" Type="Int64" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int64" />
+          <Property Name="SanPhamId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DM_DoiTac">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantId" Type="Int32" />
+          <Property Name="MaDoiTac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TenDoiTac" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="GhiChu" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="MaSoThue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreationTime" Type="DateTime" Nullable="false" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="DeleterUserId" Type="Int64" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int64" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CityID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Salary" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="BirthDate" Type="DateTime" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Lead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Band_CC" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Band_UPL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Bound_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CC_Limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DoiTacId" Type="Int64" />
+          <Property Name="DuAnID" Type="Int64" />
+          <Property Name="Created_Id" Type="Int32" />
+          <Property Name="Created_Date" Type="DateTime" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Income_Level" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="LastModifierUserId" Type="Int32" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="Lead_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="National_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Post_Date" Type="DateTime" />
+          <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Province_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Score_Range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPL_Interest" Type="Double" />
+          <Property Name="UPL_Limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Valid_Date" Type="DateTime" />
+          <Property Name="Transfer_To" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Transfer_Date" Type="DateTime" />
+          <Property Name="District_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Process_DuplicateID" Type="Int32" />
+          <Property Name="Status_DuplicateID" Type="Int32" />
+          <Property Name="Description1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description4" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Lead_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Lead_Status" Relationship="Self.FK_Lead_StatusLead_Lead" FromRole="Lead" ToRole="Lead_Status" />
+        </EntityType>
+        <EntityType Name="Lead_Status">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LeadId" Type="Int64" Nullable="false" />
+          <Property Name="UserId" Type="Int64" />
+          <Property Name="BuocXuLyId" Type="Int32" Nullable="false" />
+          <Property Name="NhomTrangThaiId" Type="Int32" Nullable="false" />
+          <Property Name="TrangThaiId" Type="Int32" Nullable="false" />
+          <Property Name="GhiChu" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreationTime" Type="DateTime" Nullable="false" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="DeleterUserId" Type="Int64" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int64" />
+          <NavigationProperty Name="Lead" Relationship="Self.FK_Lead_StatusLead_Lead" FromRole="Lead_Status" ToRole="Lead" />
+        </EntityType>
+        <EntityType Name="Lead_Version">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LeadID" Type="Int64" />
+          <Property Name="Address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Band_CC" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Band_UPL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Bound_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CC_Limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DoiTacId" Type="Int64" />
+          <Property Name="DuAnID" Type="Int64" />
+          <Property Name="Created_Id" Type="Int32" />
+          <Property Name="Created_Date" Type="DateTime" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Income_Level" Type="Int32" />
+          <Property Name="LastModifierUserId" Type="Int32" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="Lead_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="National_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Post_Date" Type="DateTime" />
+          <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Province_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Score_Range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPL_Interest" Type="Double" />
+          <Property Name="UPL_Limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Valid_Date" Type="DateTime" />
+          <Property Name="Transfer_To" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Transfer_Date" Type="DateTime" />
+          <Property Name="District_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Process_DuplicateID" Type="Int32" />
+          <Property Name="Status_DuplicateID" Type="Int32" />
+          <Property Name="Description1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description4" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Lead_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Lead_GW_Id" Type="Int64" />
+        </EntityType>
+        <EntityType Name="CD_BoLocPhanPhoi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PhanPhoiLeadId" Type="Int64" />
+          <Property Name="TenBoLoc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GiaTri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tu" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Den" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreationTime" Type="DateTime" />
+          <Property Name="CreatorUserId" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="DeleterUserId" Type="Int32" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CD_CachPhanPhoi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenCachPhanPhoi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhanPhoiLeadId" Type="Int64" />
+          <Property Name="LichPhanPhoi" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreationTime" Type="DateTime" />
+          <Property Name="CreatorUserId" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="DeleterUserId" Type="Int32" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CD_DieuKienCheckBoundCode">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="BoundCodeId" />
+            <PropertyRef Name="BoundCodeCheckId" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BoundCodeId" Type="Int64" Nullable="false" />
+          <Property Name="BoundCodeCheckId" Type="Int64" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreationTime" Type="DateTime" />
+          <Property Name="CreatorUserId" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="DeleterUserId" Type="Int32" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CD_LichPhanPhoiLead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NgayPhanPhoiLead" Type="DateTime" />
+          <Property Name="GioPhanPhoi" Type="Int32" />
+          <Property Name="SoLuong" Type="Int32" />
+          <Property Name="CachPhanPhoiLeadId" Type="Int64" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreationTime" Type="DateTime" />
+          <Property Name="CreatorUserId" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="DeleterUserId" Type="Int32" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int32" />
+          <Property Name="PhanPhoiLeadId" Type="Int64" />
+          <Property Name="ThangPhanPhoi" Type="Int32" />
+          <Property Name="NamPhanPhoi" Type="Int32" />
+          <Property Name="NgayPhanPhoi" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CD_PhanPhoiLead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HeThongNhanLead" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DuAnID" Type="Int64" />
+          <Property Name="MaChienDich" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreationTime" Type="DateTime" />
+          <Property Name="CreatorUserId" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="DeleterUserId" Type="Int32" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="GW_Tranfer_CRM">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="address2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cc_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="created_by_user_id" Type="Int32" />
+          <Property Name="created_on_date" Type="DateTime" />
+          <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="date_of_birth" Type="DateTime" />
+          <Property Name="deadline" Type="DateTime" />
+          <Property Name="distributed" Type="Int16" />
+          <Property Name="distributed_by_user_id" Type="Int32" />
+          <Property Name="distributed_on_date" Type="DateTime" />
+          <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="exists" Type="Int16" />
+          <Property Name="i2b_status" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="identification_date" Type="DateTime" />
+          <Property Name="identification_place" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="income_level" Type="Int32" />
+          <Property Name="last_modified_by_user_id" Type="Int32" />
+          <Property Name="last_modified_on_date" Type="DateTime" />
+          <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="post_date" Type="DateTime" />
+          <Property Name="post_id" Type="Int64" />
+          <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="upl_interest" Type="Double" />
+          <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="DateTime" />
+          <Property Name="dwh_exists" Type="Int32" />
+          <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="transfer_date" Type="DateTime" />
+          <Property Name="in_active" Type="Int32" />
+          <Property Name="upl_interest_origin" Type="Double" />
+        </EntityType>
+        <EntityType Name="Lead_GW">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="leadid" Type="Int64" Nullable="false" />
+          <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="created_by_user_id" Type="Int32" />
+          <Property Name="created_on_date" Type="DateTime" />
+          <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="exists" Type="Int16" />
+          <Property Name="income_level" Type="Int32" />
+          <Property Name="last_modified_by_user_id" Type="Int32" />
+          <Property Name="last_modified_on_date" Type="DateTime" />
+          <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="post_date" Type="DateTime" />
+          <Property Name="post_id" Type="Int64" />
+          <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="upl_interest" Type="Double" />
+          <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="DateTime" />
+          <Property Name="dwh_exists" Type="Int32" />
+          <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="transfer_date" Type="DateTime" />
+          <Property Name="in_active" Type="Int32" />
+          <Property Name="gr_bound_code" Type="Int32" />
+          <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gr_project" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Lead_GW_Compare">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="leadid" Type="Int64" Nullable="false" />
+          <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="created_by_user_id" Type="Int32" />
+          <Property Name="created_on_date" Type="DateTime" />
+          <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="exists" Type="Int16" />
+          <Property Name="income_level" Type="Int32" />
+          <Property Name="last_modified_by_user_id" Type="Int32" />
+          <Property Name="last_modified_on_date" Type="DateTime" />
+          <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="post_date" Type="DateTime" />
+          <Property Name="post_id" Type="Int64" />
+          <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="upl_interest" Type="Double" />
+          <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="DateTime" />
+          <Property Name="dwh_exists" Type="Int32" />
+          <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="transfer_date" Type="DateTime" />
+          <Property Name="in_active" Type="Int32" />
+          <Property Name="gr_bound_code" Type="Int32" />
+          <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gr_project" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Lead_GW_Compare_copy1">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="leadid" Type="Int64" Nullable="false" />
+          <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="created_by_user_id" Type="Int32" />
+          <Property Name="created_on_date" Type="DateTime" />
+          <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="exists" Type="Int16" />
+          <Property Name="income_level" Type="Int32" />
+          <Property Name="last_modified_by_user_id" Type="Int32" />
+          <Property Name="last_modified_on_date" Type="DateTime" />
+          <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="post_date" Type="DateTime" />
+          <Property Name="post_id" Type="Int64" />
+          <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="upl_interest" Type="Double" />
+          <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="DateTime" />
+          <Property Name="dwh_exists" Type="Int32" />
+          <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="transfer_date" Type="DateTime" />
+          <Property Name="in_active" Type="Int32" />
+          <Property Name="gr_bound_code" Type="Int32" />
+          <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gr_project" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Lead_GW_copy1">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="leadid" Type="Int64" Nullable="false" />
+          <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="created_by_user_id" Type="Int32" />
+          <Property Name="created_on_date" Type="DateTime" />
+          <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="exists" Type="Int16" />
+          <Property Name="income_level" Type="Int32" />
+          <Property Name="last_modified_by_user_id" Type="Int32" />
+          <Property Name="last_modified_on_date" Type="DateTime" />
+          <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="post_date" Type="DateTime" />
+          <Property Name="post_id" Type="Int64" />
+          <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="upl_interest" Type="Double" />
+          <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="DateTime" />
+          <Property Name="dwh_exists" Type="Int32" />
+          <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="transfer_date" Type="DateTime" />
+          <Property Name="in_active" Type="Int32" />
+          <Property Name="gr_bound_code" Type="Int32" />
+          <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gr_project" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Lead_GW_Process">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="leadid" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="leadid" Type="Int64" Nullable="false" />
+          <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_cc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="band_upl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="bound_code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cc_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="created_by_user_id" Type="Int32" />
+          <Property Name="created_on_date" Type="DateTime" />
+          <Property Name="cust_limit_id" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="exists" Type="Int16" />
+          <Property Name="income_level" Type="Int32" />
+          <Property Name="last_modified_by_user_id" Type="Int32" />
+          <Property Name="last_modified_on_date" Type="DateTime" />
+          <Property Name="lead_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="national_id_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="partner_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="post_date" Type="DateTime" />
+          <Property Name="post_id" Type="Int64" />
+          <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="score_range" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="upl_interest" Type="Double" />
+          <Property Name="upl_limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="valid_date" Type="DateTime" />
+          <Property Name="dwh_exists" Type="Int32" />
+          <Property Name="transfer_to" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="province_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="district_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tower_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="transfer_date" Type="DateTime" />
+          <Property Name="in_active" Type="Int32" />
+          <Property Name="gr_bound_code" Type="Int32" />
+          <Property Name="project" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gr_project" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Lead_Import">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Province_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CC_Band" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CC_Limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Scoring_CC" Type="DateTime" />
+          <Property Name="UPL_Band" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPL_Limit" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Lai_Suat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Scoring_UPL" Type="DateTime" />
+          <Property Name="Bound_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="San_Pham" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="DeleterUserId" Type="Int64" />
+          <Property Name="DeletionTime" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="LastModificationTime" Type="DateTime" />
+          <Property Name="LastModifierUserId" Type="Int64" />
+          <Property Name="CreationTime" Type="DateTime" />
+          <Property Name="StatusTransfer" Type="Boolean" />
+          <Property Name="TransferDate" Type="DateTime" />
+        </EntityType>
+        <Association Name="FK_CD_DieuKienCheckDuAn_DA_DuAn">
+          <End Role="DA_DuAn" Type="Self.DA_DuAn" Multiplicity="0..1" />
+          <End Role="CD_DieuKienCheckDuAn" Type="Self.CD_DieuKienCheckDuAn" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DA_DuAn">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CD_DieuKienCheckDuAn">
+              <PropertyRef Name="DuAnId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lead_StatusLead_Lead">
+          <End Role="Lead" Type="Self.Lead" Multiplicity="1" />
+          <End Role="Lead_Status" Type="Self.Lead_Status" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lead">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Lead_Status">
+              <PropertyRef Name="LeadId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Lead_GWEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AbpUsers" EntityType="Self.AbpUser" />
+          <EntitySet Name="CD_DieuKienCheckDuAn" EntityType="Self.CD_DieuKienCheckDuAn" />
+          <EntitySet Name="Cities" EntityType="Self.City" />
+          <EntitySet Name="DA_DuAn" EntityType="Self.DA_DuAn" />
+          <EntitySet Name="DM_BoundCode" EntityType="Self.DM_BoundCode" />
+          <EntitySet Name="DM_DoiTac" EntityType="Self.DM_DoiTac" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Leads" EntityType="Self.Lead" />
+          <EntitySet Name="Lead_Status" EntityType="Self.Lead_Status" />
+          <EntitySet Name="Lead_Version" EntityType="Self.Lead_Version" />
+          <EntitySet Name="CD_BoLocPhanPhoi" EntityType="Self.CD_BoLocPhanPhoi" />
+          <EntitySet Name="CD_CachPhanPhoi" EntityType="Self.CD_CachPhanPhoi" />
+          <EntitySet Name="CD_DieuKienCheckBoundCode" EntityType="Self.CD_DieuKienCheckBoundCode" />
+          <EntitySet Name="CD_LichPhanPhoiLead" EntityType="Self.CD_LichPhanPhoiLead" />
+          <EntitySet Name="CD_PhanPhoiLead" EntityType="Self.CD_PhanPhoiLead" />
+          <EntitySet Name="GW_Tranfer_CRM" EntityType="Self.GW_Tranfer_CRM" />
+          <EntitySet Name="Lead_GW" EntityType="Self.Lead_GW" />
+          <EntitySet Name="Lead_GW_Compare" EntityType="Self.Lead_GW_Compare" />
+          <EntitySet Name="Lead_GW_Compare_copy1" EntityType="Self.Lead_GW_Compare_copy1" />
+          <EntitySet Name="Lead_GW_copy1" EntityType="Self.Lead_GW_copy1" />
+          <EntitySet Name="Lead_GW_Process" EntityType="Self.Lead_GW_Process" />
+          <EntitySet Name="Lead_Import" EntityType="Self.Lead_Import" />
+          <AssociationSet Name="FK_CD_DieuKienCheckDuAn_DA_DuAn" Association="Self.FK_CD_DieuKienCheckDuAn_DA_DuAn">
+            <End Role="DA_DuAn" EntitySet="DA_DuAn" />
+            <End Role="CD_DieuKienCheckDuAn" EntitySet="CD_DieuKienCheckDuAn" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lead_StatusLead_Lead" Association="Self.FK_Lead_StatusLead_Lead">
+            <End Role="Lead" EntitySet="Leads" />
+            <End Role="Lead_Status" EntitySet="Lead_Status" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Lead_GWModelStoreContainer" CdmEntityContainer="Lead_GWEntities">
+          <EntitySetMapping Name="AbpUsers">
+            <EntityTypeMapping TypeName="Lead_GWModel.AbpUser">
+              <MappingFragment StoreEntitySet="AbpUsers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="EmailConfirmationCode" ColumnName="EmailConfirmationCode" />
+                <ScalarProperty Name="SaleCode" ColumnName="SaleCode" />
+                <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+                <ScalarProperty Name="LoaiHopDongId" ColumnName="LoaiHopDongId" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+                <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="NormalizedEmailAddress" ColumnName="NormalizedEmailAddress" />
+                <ScalarProperty Name="NormalizedUserName" ColumnName="NormalizedUserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordResetCode" ColumnName="PasswordResetCode" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="ProfilePictureId" ColumnName="ProfilePictureId" />
+                <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+                <ScalarProperty Name="ShouldChangePasswordOnNextLogin" ColumnName="ShouldChangePasswordOnNextLogin" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CD_DieuKienCheckDuAn">
+            <EntityTypeMapping TypeName="Lead_GWModel.CD_DieuKienCheckDuAn">
+              <MappingFragment StoreEntitySet="CD_DieuKienCheckDuAn">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TenantId" ColumnName="TenantId" />
+                <ScalarProperty Name="TenDieuKien" ColumnName="TenDieuKien" />
+                <ScalarProperty Name="PhepTinh" ColumnName="PhepTinh" />
+                <ScalarProperty Name="GiaTri" ColumnName="GiaTri" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="Den" ColumnName="Den" />
+                <ScalarProperty Name="DuAnId" ColumnName="DuAnId" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cities">
+            <EntityTypeMapping TypeName="Lead_GWModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DA_DuAn">
+            <EntityTypeMapping TypeName="Lead_GWModel.DA_DuAn">
+              <MappingFragment StoreEntitySet="DA_DuAn">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TenantId" ColumnName="TenantId" />
+                <ScalarProperty Name="MaDuAn" ColumnName="MaDuAn" />
+                <ScalarProperty Name="TenDuAn" ColumnName="TenDuAn" />
+                <ScalarProperty Name="NgayPheDuyet" ColumnName="NgayPheDuyet" />
+                <ScalarProperty Name="NgayBatDau" ColumnName="NgayBatDau" />
+                <ScalarProperty Name="NgayKetThuc" ColumnName="NgayKetThuc" />
+                <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_BoundCode">
+            <EntityTypeMapping TypeName="Lead_GWModel.DM_BoundCode">
+              <MappingFragment StoreEntitySet="DM_BoundCode">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+                <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+                <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+                <ScalarProperty Name="SanPhamId" ColumnName="SanPhamId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_DoiTac">
+            <EntityTypeMapping TypeName="Lead_GWModel.DM_DoiTac">
+              <MappingFragment StoreEntitySet="DM_DoiTac">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TenantId" ColumnName="TenantId" />
+                <ScalarProperty Name="MaDoiTac" ColumnName="MaDoiTac" />
+                <ScalarProperty Name="TenDoiTac" ColumnName="TenDoiTac" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="MaSoThue" ColumnName="MaSoThue" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="Lead_GWModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Leads">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead">
+              <MappingFragment StoreEntitySet="Lead">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Band_CC" ColumnName="Band_CC" />
+                <ScalarProperty Name="Band_UPL" ColumnName="Band_UPL" />
+                <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+                <ScalarProperty Name="CC_Limit" ColumnName="CC_Limit" />
+                <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+                <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+                <ScalarProperty Name="Created_Id" ColumnName="Created_Id" />
+                <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Income_Level" ColumnName="Income_Level" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="Lead_Name" ColumnName="Lead_Name" />
+                <ScalarProperty Name="National_Id" ColumnName="National_Id" />
+                <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+                <ScalarProperty Name="Post_Date" ColumnName="Post_Date" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+                <ScalarProperty Name="Province_Code" ColumnName="Province_Code" />
+                <ScalarProperty Name="Score_Range" ColumnName="Score_Range" />
+                <ScalarProperty Name="UPL_Interest" ColumnName="UPL_Interest" />
+                <ScalarProperty Name="UPL_Limit" ColumnName="UPL_Limit" />
+                <ScalarProperty Name="Valid_Date" ColumnName="Valid_Date" />
+                <ScalarProperty Name="Transfer_To" ColumnName="Transfer_To" />
+                <ScalarProperty Name="Transfer_Date" ColumnName="Transfer_Date" />
+                <ScalarProperty Name="District_Code" ColumnName="District_Code" />
+                <ScalarProperty Name="Process_DuplicateID" ColumnName="Process_DuplicateID" />
+                <ScalarProperty Name="Status_DuplicateID" ColumnName="Status_DuplicateID" />
+                <ScalarProperty Name="Description1" ColumnName="Description1" />
+                <ScalarProperty Name="Description2" ColumnName="Description2" />
+                <ScalarProperty Name="Description3" ColumnName="Description3" />
+                <ScalarProperty Name="Description4" ColumnName="Description4" />
+                <ScalarProperty Name="Lead_Code" ColumnName="Lead_Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_Status">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_Status">
+              <MappingFragment StoreEntitySet="Lead_Status">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="LeadId" ColumnName="LeadId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="BuocXuLyId" ColumnName="BuocXuLyId" />
+                <ScalarProperty Name="NhomTrangThaiId" ColumnName="NhomTrangThaiId" />
+                <ScalarProperty Name="TrangThaiId" ColumnName="TrangThaiId" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_Version">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_Version">
+              <MappingFragment StoreEntitySet="Lead_Version">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="LeadID" ColumnName="LeadID" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Band_CC" ColumnName="Band_CC" />
+                <ScalarProperty Name="Band_UPL" ColumnName="Band_UPL" />
+                <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+                <ScalarProperty Name="CC_Limit" ColumnName="CC_Limit" />
+                <ScalarProperty Name="DoiTacId" ColumnName="DoiTacId" />
+                <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+                <ScalarProperty Name="Created_Id" ColumnName="Created_Id" />
+                <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Income_Level" ColumnName="Income_Level" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="Lead_Name" ColumnName="Lead_Name" />
+                <ScalarProperty Name="National_Id" ColumnName="National_Id" />
+                <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+                <ScalarProperty Name="Post_Date" ColumnName="Post_Date" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+                <ScalarProperty Name="Province_Code" ColumnName="Province_Code" />
+                <ScalarProperty Name="Score_Range" ColumnName="Score_Range" />
+                <ScalarProperty Name="UPL_Interest" ColumnName="UPL_Interest" />
+                <ScalarProperty Name="UPL_Limit" ColumnName="UPL_Limit" />
+                <ScalarProperty Name="Valid_Date" ColumnName="Valid_Date" />
+                <ScalarProperty Name="Transfer_To" ColumnName="Transfer_To" />
+                <ScalarProperty Name="Transfer_Date" ColumnName="Transfer_Date" />
+                <ScalarProperty Name="District_Code" ColumnName="District_Code" />
+                <ScalarProperty Name="Process_DuplicateID" ColumnName="Process_DuplicateID" />
+                <ScalarProperty Name="Status_DuplicateID" ColumnName="Status_DuplicateID" />
+                <ScalarProperty Name="Description1" ColumnName="Description1" />
+                <ScalarProperty Name="Description2" ColumnName="Description2" />
+                <ScalarProperty Name="Description3" ColumnName="Description3" />
+                <ScalarProperty Name="Description4" ColumnName="Description4" />
+                <ScalarProperty Name="Lead_Code" ColumnName="Lead_Code" />
+                <ScalarProperty Name="Lead_GW_Id" ColumnName="Lead_GW_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CD_BoLocPhanPhoi">
+            <EntityTypeMapping TypeName="Lead_GWModel.CD_BoLocPhanPhoi">
+              <MappingFragment StoreEntitySet="CD_BoLocPhanPhoi">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PhanPhoiLeadId" ColumnName="PhanPhoiLeadId" />
+                <ScalarProperty Name="TenBoLoc" ColumnName="TenBoLoc" />
+                <ScalarProperty Name="GiaTri" ColumnName="GiaTri" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="Den" ColumnName="Den" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CD_CachPhanPhoi">
+            <EntityTypeMapping TypeName="Lead_GWModel.CD_CachPhanPhoi">
+              <MappingFragment StoreEntitySet="CD_CachPhanPhoi">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TenCachPhanPhoi" ColumnName="TenCachPhanPhoi" />
+                <ScalarProperty Name="PhanPhoiLeadId" ColumnName="PhanPhoiLeadId" />
+                <ScalarProperty Name="LichPhanPhoi" ColumnName="LichPhanPhoi" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CD_DieuKienCheckBoundCode">
+            <EntityTypeMapping TypeName="Lead_GWModel.CD_DieuKienCheckBoundCode">
+              <MappingFragment StoreEntitySet="CD_DieuKienCheckBoundCode">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BoundCodeId" ColumnName="BoundCodeId" />
+                <ScalarProperty Name="BoundCodeCheckId" ColumnName="BoundCodeCheckId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CD_LichPhanPhoiLead">
+            <EntityTypeMapping TypeName="Lead_GWModel.CD_LichPhanPhoiLead">
+              <MappingFragment StoreEntitySet="CD_LichPhanPhoiLead">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="NgayPhanPhoiLead" ColumnName="NgayPhanPhoiLead" />
+                <ScalarProperty Name="GioPhanPhoi" ColumnName="GioPhanPhoi" />
+                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="CachPhanPhoiLeadId" ColumnName="CachPhanPhoiLeadId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+                <ScalarProperty Name="PhanPhoiLeadId" ColumnName="PhanPhoiLeadId" />
+                <ScalarProperty Name="ThangPhanPhoi" ColumnName="ThangPhanPhoi" />
+                <ScalarProperty Name="NamPhanPhoi" ColumnName="NamPhanPhoi" />
+                <ScalarProperty Name="NgayPhanPhoi" ColumnName="NgayPhanPhoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CD_PhanPhoiLead">
+            <EntityTypeMapping TypeName="Lead_GWModel.CD_PhanPhoiLead">
+              <MappingFragment StoreEntitySet="CD_PhanPhoiLead">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="HeThongNhanLead" ColumnName="HeThongNhanLead" />
+                <ScalarProperty Name="DuAnID" ColumnName="DuAnID" />
+                <ScalarProperty Name="MaChienDich" ColumnName="MaChienDich" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GW_Tranfer_CRM">
+            <EntityTypeMapping TypeName="Lead_GWModel.GW_Tranfer_CRM">
+              <MappingFragment StoreEntitySet="GW_Tranfer_CRM">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="address2" ColumnName="address2" />
+                <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+                <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+                <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+                <ScalarProperty Name="cc_code" ColumnName="cc_code" />
+                <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+                <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+                <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+                <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+                <ScalarProperty Name="deadline" ColumnName="deadline" />
+                <ScalarProperty Name="distributed" ColumnName="distributed" />
+                <ScalarProperty Name="distributed_by_user_id" ColumnName="distributed_by_user_id" />
+                <ScalarProperty Name="distributed_on_date" ColumnName="distributed_on_date" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="exists" ColumnName="exists" />
+                <ScalarProperty Name="i2b_status" ColumnName="i2b_status" />
+                <ScalarProperty Name="identification_date" ColumnName="identification_date" />
+                <ScalarProperty Name="identification_place" ColumnName="identification_place" />
+                <ScalarProperty Name="income_level" ColumnName="income_level" />
+                <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+                <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+                <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+                <ScalarProperty Name="limit" ColumnName="limit" />
+                <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+                <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="post_date" ColumnName="post_date" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="score_range" ColumnName="score_range" />
+                <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+                <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+                <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+                <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+                <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+                <ScalarProperty Name="province_code" ColumnName="province_code" />
+                <ScalarProperty Name="district_code" ColumnName="district_code" />
+                <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+                <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+                <ScalarProperty Name="in_active" ColumnName="in_active" />
+                <ScalarProperty Name="upl_interest_origin" ColumnName="upl_interest_origin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_GW">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW">
+              <MappingFragment StoreEntitySet="Lead_GW">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="leadid" ColumnName="leadid" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+                <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+                <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+                <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+                <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+                <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="exists" ColumnName="exists" />
+                <ScalarProperty Name="income_level" ColumnName="income_level" />
+                <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+                <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+                <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+                <ScalarProperty Name="limit" ColumnName="limit" />
+                <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+                <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="post_date" ColumnName="post_date" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="score_range" ColumnName="score_range" />
+                <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+                <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+                <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+                <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+                <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+                <ScalarProperty Name="province_code" ColumnName="province_code" />
+                <ScalarProperty Name="district_code" ColumnName="district_code" />
+                <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+                <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+                <ScalarProperty Name="in_active" ColumnName="in_active" />
+                <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+                <ScalarProperty Name="project" ColumnName="project" />
+                <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_GW_Compare">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_Compare">
+              <MappingFragment StoreEntitySet="Lead_GW_Compare">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="leadid" ColumnName="leadid" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+                <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+                <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+                <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+                <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+                <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="exists" ColumnName="exists" />
+                <ScalarProperty Name="income_level" ColumnName="income_level" />
+                <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+                <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+                <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+                <ScalarProperty Name="limit" ColumnName="limit" />
+                <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+                <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="post_date" ColumnName="post_date" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="score_range" ColumnName="score_range" />
+                <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+                <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+                <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+                <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+                <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+                <ScalarProperty Name="province_code" ColumnName="province_code" />
+                <ScalarProperty Name="district_code" ColumnName="district_code" />
+                <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+                <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+                <ScalarProperty Name="in_active" ColumnName="in_active" />
+                <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+                <ScalarProperty Name="project" ColumnName="project" />
+                <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_GW_Compare_copy1">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_Compare_copy1">
+              <MappingFragment StoreEntitySet="Lead_GW_Compare_copy1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="leadid" ColumnName="leadid" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+                <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+                <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+                <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+                <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+                <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="exists" ColumnName="exists" />
+                <ScalarProperty Name="income_level" ColumnName="income_level" />
+                <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+                <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+                <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+                <ScalarProperty Name="limit" ColumnName="limit" />
+                <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+                <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="post_date" ColumnName="post_date" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="score_range" ColumnName="score_range" />
+                <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+                <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+                <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+                <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+                <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+                <ScalarProperty Name="province_code" ColumnName="province_code" />
+                <ScalarProperty Name="district_code" ColumnName="district_code" />
+                <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+                <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+                <ScalarProperty Name="in_active" ColumnName="in_active" />
+                <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+                <ScalarProperty Name="project" ColumnName="project" />
+                <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_GW_copy1">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_copy1">
+              <MappingFragment StoreEntitySet="Lead_GW_copy1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="leadid" ColumnName="leadid" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+                <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+                <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+                <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+                <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+                <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="exists" ColumnName="exists" />
+                <ScalarProperty Name="income_level" ColumnName="income_level" />
+                <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+                <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+                <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+                <ScalarProperty Name="limit" ColumnName="limit" />
+                <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+                <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="post_date" ColumnName="post_date" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="score_range" ColumnName="score_range" />
+                <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+                <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+                <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+                <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+                <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+                <ScalarProperty Name="province_code" ColumnName="province_code" />
+                <ScalarProperty Name="district_code" ColumnName="district_code" />
+                <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+                <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+                <ScalarProperty Name="in_active" ColumnName="in_active" />
+                <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+                <ScalarProperty Name="project" ColumnName="project" />
+                <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_GW_Process">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_GW_Process">
+              <MappingFragment StoreEntitySet="Lead_GW_Process">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="leadid" ColumnName="leadid" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="band_cc" ColumnName="band_cc" />
+                <ScalarProperty Name="band_upl" ColumnName="band_upl" />
+                <ScalarProperty Name="bound_code" ColumnName="bound_code" />
+                <ScalarProperty Name="cc_limit" ColumnName="cc_limit" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="created_by_user_id" ColumnName="created_by_user_id" />
+                <ScalarProperty Name="created_on_date" ColumnName="created_on_date" />
+                <ScalarProperty Name="cust_limit_id" ColumnName="cust_limit_id" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="exists" ColumnName="exists" />
+                <ScalarProperty Name="income_level" ColumnName="income_level" />
+                <ScalarProperty Name="last_modified_by_user_id" ColumnName="last_modified_by_user_id" />
+                <ScalarProperty Name="last_modified_on_date" ColumnName="last_modified_on_date" />
+                <ScalarProperty Name="lead_name" ColumnName="lead_name" />
+                <ScalarProperty Name="limit" ColumnName="limit" />
+                <ScalarProperty Name="national_id_number" ColumnName="national_id_number" />
+                <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="post_date" ColumnName="post_date" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="score_range" ColumnName="score_range" />
+                <ScalarProperty Name="upl_interest" ColumnName="upl_interest" />
+                <ScalarProperty Name="upl_limit" ColumnName="upl_limit" />
+                <ScalarProperty Name="valid_date" ColumnName="valid_date" />
+                <ScalarProperty Name="dwh_exists" ColumnName="dwh_exists" />
+                <ScalarProperty Name="transfer_to" ColumnName="transfer_to" />
+                <ScalarProperty Name="province_code" ColumnName="province_code" />
+                <ScalarProperty Name="district_code" ColumnName="district_code" />
+                <ScalarProperty Name="tower_code" ColumnName="tower_code" />
+                <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+                <ScalarProperty Name="in_active" ColumnName="in_active" />
+                <ScalarProperty Name="gr_bound_code" ColumnName="gr_bound_code" />
+                <ScalarProperty Name="project" ColumnName="project" />
+                <ScalarProperty Name="gr_project" ColumnName="gr_project" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lead_Import">
+            <EntityTypeMapping TypeName="Lead_GWModel.Lead_Import">
+              <MappingFragment StoreEntitySet="Lead_Import">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+                <ScalarProperty Name="Province_Code" ColumnName="Province_Code" />
+                <ScalarProperty Name="CC_Band" ColumnName="CC_Band" />
+                <ScalarProperty Name="CC_Limit" ColumnName="CC_Limit" />
+                <ScalarProperty Name="Scoring_CC" ColumnName="Scoring_CC" />
+                <ScalarProperty Name="UPL_Band" ColumnName="UPL_Band" />
+                <ScalarProperty Name="UPL_Limit" ColumnName="UPL_Limit" />
+                <ScalarProperty Name="Lai_Suat" ColumnName="Lai_Suat" />
+                <ScalarProperty Name="Scoring_UPL" ColumnName="Scoring_UPL" />
+                <ScalarProperty Name="Bound_Code" ColumnName="Bound_Code" />
+                <ScalarProperty Name="San_Pham" ColumnName="San_Pham" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="DeleterUserId" ColumnName="DeleterUserId" />
+                <ScalarProperty Name="DeletionTime" ColumnName="DeletionTime" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastModificationTime" ColumnName="LastModificationTime" />
+                <ScalarProperty Name="LastModifierUserId" ColumnName="LastModifierUserId" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="StatusTransfer" ColumnName="StatusTransfer" />
+                <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

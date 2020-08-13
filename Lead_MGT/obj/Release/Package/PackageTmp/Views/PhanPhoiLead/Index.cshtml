@@ -1,0 +1,940 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@section scripHeadPhanPhoi{
+    <script src="~/Assets/global/scripts/munty.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+}
+@section scripHeadPhanPhoiCss{
+    <style>
+        .campain-title {
+            width: 100%;
+            background-color: #0275d8;
+            line-height: 40px;
+            padding-left: 10px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 4px 4px 0 0 !important;
+        }
+
+        .page-title {
+        }
+
+        .campain-subtitle.sub {
+            color: #8d7baf;
+        }
+
+        .del-code {
+            width: calc(100% - 200px);
+            display: inline-block;
+        }
+
+        .del-code-label {
+            display: block;
+        }
+
+        .del-button {
+            color: #49c1a4;
+            border: 1px solid #49c1a4;
+            display: inline-block;
+            height: 34px;
+            padding: 6px 12px;
+            border-radius: 4px !important;
+            margin-left: 100px;
+            font-weight: bold;
+            text-decoration: none !important;
+            transition: .3s;
+        }
+
+            .del-button:hover {
+                background: #49c1a4;
+                color: #fff;
+                transition: .5s;
+            }
+
+        .btn-block {
+            background: #5867dd;
+            display: block;
+            margin-left: 0 !important;
+            width: 150px !important;
+            color: #fff;
+            margin-bottom: 15px;
+            border-radius: 4px !important;
+        }
+
+            .btn-block:hover {
+                color: #fff;
+            }
+
+        .lead-number {
+            display: inline-block;
+            width: 150px;
+            margin-left: 15px;
+        }
+
+        .btn-inline {
+            display: inline-block;
+            margin-bottom: 0;
+            width: 200px;
+        }
+
+        .btn-inline {
+            display: inline-block !important;
+            margin-top: -3px;
+            margin-left: 15px !important;
+        }
+
+        .filter-form {
+            padding-bottom: 15px;
+        }
+
+        .box-border {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            min-height: 300px;
+        }
+
+        .select-day {
+            display: inline-block;
+            width: 150px;
+            margin-left: 15px;
+        }
+
+        .btn-save {
+            margin-top: 0 !important;
+            width: 100px !important;
+        }
+
+        .table-lead {
+            background: #fff;
+            margin-top: 15px;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+            .table-lead thead {
+                border-bottom: 1px solid #ddd;
+            }
+
+                .table-lead thead th {
+                    text-align: center;
+                }
+
+            .table-lead tr td {
+                height: 35px;
+                text-align: center;
+            }
+
+        .input-table {
+            width: 100%;
+        }
+
+        .row-lead {
+            padding-bottom: 30px;
+        }
+
+        .fc-toolbar {
+            display: none;
+        }
+
+        .fc-view-container {
+            display: none;
+        }
+
+        #monthAndYear {
+            display: none;
+        }
+
+        #calendar-body input {
+            width: 100%;
+            background: #fff;
+        }
+
+        .radio span {
+            cursor: pointer;
+        }
+
+        .multiselect.dropdown-toggle {
+            display: block;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 15px !important;
+        }
+
+        .btn-group {
+            display: block;
+            width: 100%;
+        }
+
+        .form-body-input input {
+            margin-bottom: 15px !important;
+        }
+
+        .multiselect-container {
+            max-height: 300px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        .postdate .btn.default {
+            margin-top: -14px;
+        }
+
+        .text-mg {
+            margin-bottom: 0px;
+            padding: 15px;
+        }
+
+        input[type=radio] {
+            margin-left: -7px !important;
+        }
+    </style>
+}
+
+}
+
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <h3 class="page-title">
+            Tạo chiến dịch tự động
+        </h3>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Begin: life time stats -->
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="tab-pane" id="tab_1">
+                            <div class="portlet box blue">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-gift"></i>Thông tin chiến dịch
+                                    </div>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse">
+                                        </a>
+                                        <a href="#portlet-config" data-toggle="modal" class="config">
+                                        </a>
+                                        <a href="javascript:;" class="reload">
+                                        </a>
+                                        <a href="javascript:;" class="remove">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <form action="#" class="horizontal-form">
+                                        <div class="form-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="camp-system" class="campain-subtitle">Hệ thống</label>
+                                                        <select class="form-control" id="HeThong" name="HeThong">
+                                                            <option value="1">Hệ thống CRM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="camp-project" class="campain-subtitle sub">Dự án</label>
+                                                        <select class="form-control" id="DuAn" name="DuAn">
+
+                                                            @foreach (var item in ViewBag.DuAn.Items)
+                                                            {
+                                                                <option value="@item.Value">@item.Text</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="camp-system" class="campain-subtitle sub">Mã chiến dịch</label>
+                                                        @*<input class="form-control" type="text" id="MaChienDich" name="MaChienDich" placeholder="Mã chiến dịch">*@
+
+                                                        <select class="form-control" id="MaChienDich" name="MaChienDich" data-placeholder="Chon Mã Chiến Dich">
+                                                            @foreach (var item in ViewBag.ChienDich.Items)
+                                                            {
+                                                                <option value="@item.MaChienDich">@item.MaChienDich</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                    <p class="text-right text-mg">
+                                        <button class="btn-filter btn btn-block btn-inline btn-save" id="btnGet">Tìm</button>
+                                    </p>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End: life time stats -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Begin: life time stats -->
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="tab-pane" id="tab_1">
+                            <div class="portlet box blue">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-gift"></i>Bộ lọc
+                                    </div>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse">
+                                        </a>
+                                        <a href="#portlet-config" data-toggle="modal" class="config">
+                                        </a>
+                                        <a href="javascript:;" class="reload">
+                                        </a>
+                                        <a href="javascript:;" class="remove">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <form action="#" class="horizontal-form" id="form1">
+                                        <div class="form-body form-body-input">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="camp-project" class="campain-subtitle sub">Boundcode:</label>
+                                                        <select class="form-control" id="BoundCode" name="BoundCode" multiple="multiple" data-placeholder="Lựa chọn">
+                                                            @foreach (var item in ViewBag.BoundCode.Items)
+                                                            {
+                                                                <option value="@item.Text">@item.Text</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="camp-project" class="campain-subtitle sub">Mã tỉnh thành:</label>
+
+                                                        <select id="ProvinceCode" name=" " class="form-control input-xlarge select2me" data-placeholder="Lựa chọn" multiple="multiple">
+
+                                                            @foreach (var item in ViewBag.TinhThanh.Items)
+                                                            {
+                                                                <option value="@item.MaTinhThanh">@item.MaTinhThanh</option>
+                                                            }
+                                                        </select>
+
+                                                        <div class="form-group">
+                                                            <label for="camp-project" class="campain-subtitle sub">Lãi suất:</label>
+                                                            <input class="form-control" type="text" name="LaiXuat" id="LaiXuat" placeholder="Lãi suất">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="camp-project" class="campain-subtitle sub">Post date:</label>
+
+                                                            <div class="input-group input-medium date date-picker postdate" data-date-format="dd-mm-yyyy" data-date-start-date="-10d">
+                                                                <input type="text" class="form-control" name="PostDate" id="PostDate">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+                                                                </span>
+                                                            </div>
+                                                            <label for="camp-project" class="campain-subtitle sub">Valid date:</label>
+
+                                                            <div class="input-group input-medium date date-picker postdate" data-date-format="dd-mm-yyyy" data-date-start-date="-10d">
+                                                                <input type="text" class="form-control" name="ValidDate" id="ValidDate">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+                                                                </span>
+                                                            </div>
+                                                            <div class="form-group">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="camp-project" class="campain-subtitle sub">Partner_code:</label>
+                                                        <input class="form-control" type="text" id="PartnerCode" name="PartnerCode" placeholder="Partner_code">
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Hạn mức CC từ:</label>
+                                                                <input class="form-control" type="text" name="CCLimitTu" id="CCLimitTu" placeholder="Hạn mức CC từ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Hạn mức CC đến:</label>
+                                                                <input class="form-control" type="text" name="CCLimitDen" id="CCLimitDen" placeholder="Hạn mức CC đến">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Hạn mức UPL từ:</label>
+                                                                <input class="form-control" type="text" name="UPLLimitTu" id="UPLLimitTu" placeholder="Hạn mức UPL từ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Hạn mức UPL đến:</label>
+                                                                <input class="form-control" type="text" name="UPLLimitDen" id="UPLLimitDen" placeholder="Hạn mức UPL đến">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Band CC từ:</label>
+                                                                <input class="form-control" type="text" name="BandCCTu" id="BandCCTu" placeholder="Band CC từ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Band CC đến:</label>
+                                                                <input class="form-control" type="text" name="BandCCDen" id="BandCCDen" placeholder="Band CC đến">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Band UPL từ:</label>
+                                                                <input class="form-control" type="text" name="BandUPLTu" id="BandUPLTu" placeholder="Band UPL từ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="camp-project" class="campain-subtitle sub">Band UPL đến:</label>
+                                                                <input class="form-control" type="text" name="BandUPLDen" id="BandUPLDen" placeholder="Band UPL đến">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End: life time stats -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Begin: life time stats -->
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="tab-pane" id="tab_1">
+                            <div class="portlet box blue">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-gift"></i>Thông tin chiến dịch
+                                    </div>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse">
+                                        </a>
+                                        <a href="#portlet-config" data-toggle="modal" class="config">
+                                        </a>
+                                        <a href="javascript:;" class="reload">
+                                        </a>
+                                        <a href="javascript:;" class="remove">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <form action="#" class="horizontal-form" id="form2">
+                                        <div class="form-body">
+                                            <div class="row row-lead">
+                                                <div class="col-md-3">
+                                                    <label class="campain-subtitle" for="lead-number">Tất cả lead đang có:</label>
+                                                    <input type="radio" name="allLead" id="allLead" value="" class="form-control">
+                                                </div>
+                                                <div class="col-md-3 box-border">
+                                                    <label class="campain-subtitle" for="lead-number-day">Lead tối đa / 1 ngày làm việc:</label>
+                                                    <input type="radio" name="allLead" id="leadEveryDay" value="" class="form-control">
+                                                    <input type="text" class="form-control" id="soLuongEveryDay" name="soLuongEveryDay">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="campain-subtitle" for="distribute-day">Phân bổ theo ngày:</label>
+                                                    <input type="radio" name="allLead" id="leadNumberDay" value="" class="form-control">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="card">
+                                                                <h3 class="card-header" id="monthAndYear"></h3>
+                                                                <div class="form-inline">
+                                                                    <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                                                                        <option value=0>Tháng 1</option>
+                                                                        <option value=1>Tháng 2</option>
+                                                                        <option value=2>Thang 3</option>
+                                                                        <option value=3>Tháng 3</option>
+                                                                        <option value=4>Tháng 5</option>
+                                                                        <option value=5>Tháng 6</option>
+                                                                        <option value=6>Tháng 7</option>
+                                                                        <option value=7>Tháng 8</option>
+                                                                        <option value=8>Tháng 9</option>
+                                                                        <option value=9>Tháng 10</option>
+                                                                        <option value=10>Tháng 11</option>
+                                                                        <option value=11>Tháng 12</option>
+                                                                    </select>
+                                                                    <label for="year"></label>
+                                                                    <select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+                                                                        <option value=2019>2019</option>
+                                                                        <option value=2020>2020</option>
+                                                                        <option value=2021>2021</option>
+                                                                        <option value=2022>2022</option>
+                                                                        <option value=2023>2023</option>
+                                                                    </select>
+                                                                </div>
+                                                                <table class="table table-bordered table-responsive-sm table-lead" id="calendar">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Thứ 2</th>
+                                                                            <th>Thứ 3</th>
+                                                                            <th>Thứ 4</th>
+                                                                            <th>Thứ 5</th>
+                                                                            <th>Thứ 6</th>
+                                                                            <th>Thứ 7</th>
+                                                                            <th>Chủ nhật</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="calendar-body"></tbody>
+                                                                </table>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <p class="text-right text-mg">
+                                        <button class="btn-filter btn btn-block btn-inline btn-save" id="btnSave">Lưu</button>
+                                        <button class="btn-filter btn btn-block btn-inline btn-save">Thoát</button>
+                                    </p>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End: life time stats -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripImportLeadJe2{
+    <script>
+        let today = new Date();
+        let currentMonth = today.getMonth();
+        let currentYear = today.getFullYear();
+        let selectYear = document.getElementById("year");
+        let selectMonth = document.getElementById("month");
+        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let monthAndYear = document.getElementById("monthAndYear");
+
+        showCalendar(currentMonth, currentYear);
+
+    function jump() {
+        console.log("jump");
+            currentYear = parseInt(selectYear.value);
+            currentMonth = parseInt(selectMonth.value);
+            showCalendar(currentMonth, currentYear);
+
+    }
+    function jumps() {
+        console.log("jumps");
+       let currentMonth = today.getMonth();
+        let currentYear = today.getFullYear();
+            showCalendar(currentMonth, currentYear);
+
+        }
+
+        function showCalendar(month, year) {
+
+            let firstDay = (new Date(year, month)).getDay();
+            let daysInMonth = 32 - new Date(year, month, 32).getDate();
+            let tbl = document.getElementById("calendar-body");
+            tbl.innerHTML = "";
+            monthAndYear.innerHTML = months[month] + " " + year;
+            selectYear.value = year;
+            selectMonth.value = month;
+            // creating all cells
+            let date = 1;
+            for (let i = 0; i < 6; i++) {
+                // creates a table row
+                let row = document.createElement("tr");
+                //creating individual cells, filing them up with data.
+                for (let j = 1; j < 8; j++) {
+                    if (i === 0 && j < firstDay) {
+                        let cell = document.createElement("td");
+                        let cellText = document.createTextNode("");
+                        cell.appendChild(cellText);
+                        row.appendChild(cell);
+                    }
+                    else if (date > daysInMonth) {
+                        break;
+                    }
+                    else {
+                        let cell = document.createElement("td");
+                        let cellText = document.createTextNode(date);
+                        if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+                            cell.classList.add("bg-info");
+                        } // color today's date
+                        cell.appendChild(cellText);
+                        var input = document.createElement("INPUT");
+                        var textinput = document.createTextNode("");
+                        input.setAttribute("id", date);
+                        var cellTextText = JSON.stringify(cellText);
+
+                        input.appendChild(textinput);
+                        cell.appendChild(input);
+                        row.appendChild(cell);
+                        date++;
+                    }
+                }
+                tbl.appendChild(row); // appending each row into calendar body.
+            }
+        }
+//var listLich = [];
+
+//            for (var i = 1; i <= daysInMonth1; i++) {
+//                var obj = {
+//                    ngay: i,
+//                    soluong: $('#'+i+'').val()
+//                }
+//                listLich.push(obj);
+//            }
+
+//            console.log(listLich);
+//            var tong = {
+//                hethong: $('#HeThong').val(),
+//                MaChienDich: $('#MaChienDich').val(),
+//                DuAn: $('#DuAn').val(),
+//                data:listLich
+
+
+//            }
+
+
+
+    //$('#TinhThanh').mu(chuoi);
+   // debugger
+    //var listLich = ["HNO","DNA","CTH"];
+    //$('#ProvinceCode').val(listLich);
+
+    $(function () {
+        $("#btnGet").click(function () {
+            
+            debugger;
+            var dataObject = JSON.stringify({
+                'HeThong': $('#HeThong').val(),
+                'MaChienDich': $('#MaChienDich').val(),
+
+            })
+            document.getElementById("form1").reset();
+            document.getElementById("form2").reset();
+            
+
+
+           //document.getElementById("calendar-body").reset();
+            $(".checked").removeClass("checked");
+
+            $(".multiselect-selected-text").text("Lựa chọn")
+
+            var dayIDLength = 32 - new Date(currentYear, currentMonth, 32).getDate();
+            jumps();
+            console.log(dataObject)
+            $.ajax({
+               type: 'POST',
+                   url: "@Url.Action("GetDataBySystem", "PhanPhoiLead")"  ,
+                   contentType: "application/json; charset=utf-8",
+                   data: dataObject,
+                success: function (response) {
+                      console.log(response)
+                    if (response.length != 0) {
+                        debugger
+                      //  $('#MaChienDich').val(response[0].MaChienDich);
+
+                        window.innerArrayLength = [];
+                        var innerArrayLengthBC = [];
+                        for (var i = 0; i < response[0].BoLoc.length; i++) {
+
+                            if (response[0].BoLoc[i].TenBoLoc == "Province_Code") {
+                                //$('#ProvinceCode').val(response[0].BoLoc[i].GiaTri);
+                                //$("#ProvinceCode option[value='" + e + "']").prop("selected", true);
+                                window.innerArrayLength.push(response[0].BoLoc[i].GiaTri)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc === "Bound_Code") {
+
+                                innerArrayLengthBC.push(response[0].BoLoc[i].GiaTri)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc == "PartnerCode") {
+                                $('#PartnerCode').val(response[0].BoLoc[i].GiaTri)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc === "UPL_Interest") {
+                                $('#LaiXuat').val(response[0].BoLoc[i].GiaTri)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc == "CC_Limit") {
+                                $('#CCLimitTu').val(response[0].BoLoc[i].Tu)
+                                $('#CCLimitDen').val(response[0].BoLoc[i].Den)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc === "UPL_Limit") {
+                                $('#UPLLimitTu').val(response[0].BoLoc[i].Tu)
+                                $('#UPLLimitDen').val(response[0].BoLoc[i].Den)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc === "Band_CC") {
+                                $('#BandCCTu').val(response[0].BoLoc[i].Tu)
+                                $('#BandCCDen').val(response[0].BoLoc[i].Den)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc === "Band_UPL") {
+                                $('#BandUPLTu').val(response[0].BoLoc[i].Tu)
+                                $('#BandUPLDen').val(response[0].BoLoc[i].Den)
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc === "Valid_Date") {
+                                $('#ValidDate').val(response[0].BoLoc[i].GiaTri)
+
+                            }
+                            if (response[0].BoLoc[i].TenBoLoc === "Post_Date") {
+                                $('#PostDate').val(response[0].BoLoc[i].GiaTri)
+
+                            }
+                        }
+                        debugger
+
+                        //document.getElementById("ProvinceCode").value = innerArrayLength.values;
+                        $('#ProvinceCode').val(window.innerArrayLength);
+                        $("#ProvinceCode").multiselect('refresh');
+                        $('#BoundCode').val(innerArrayLengthBC);
+                        $("#BoundCode").multiselect('refresh');
+
+                        if (response[0].LichPhanPhoi[0].CachPhanPhoi == "1") {
+                            document.getElementById("allLead").checked = true;
+                            $("#allLead").parent().attr("class", "checked");
+                        }
+                        if (response[0].LichPhanPhoi[0].CachPhanPhoi == "2") {
+                            document.getElementById("leadEveryDay").checked = true
+                            $("#leadEveryDay").parent().attr("class", "checked");
+                            $('#soLuongEveryDay').val(response[0].LichPhanPhoi[0].SoLuong);
+                        }
+                        debugger
+                        if (response[0].LichPhanPhoi[0].CachPhanPhoi == "3") {
+                            document.getElementById("leadNumberDay").checked = true
+                             $("#leadNumberDay").parent().attr("class", "checked");
+                            for (var i = 0; i < dayIDLength; i++) {
+
+                                console.log(response[0].LichPhanPhoi[i].NgayPhanPhoi)
+                                 console.log(response[0].LichPhanPhoi[i].SoLuong)
+                            $('#' + response[0].LichPhanPhoi[i].NgayPhanPhoi + '').val(response[0].LichPhanPhoi[i].SoLuong)
+
+                        }
+
+                        }
+
+                    }
+                    else {
+                        alert("Chiến dịch chưa được cấu hình");
+                        //location.reload();
+                    }
+
+                },
+                failure: function (response) {
+                    alert(response.responseText); Partner_code
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+
+            });
+    });
+    $("#btnGet").click(function () {
+        //debugger
+
+    });
+    $(function () {
+
+        $("#btnSave").click(function () {
+            debugger;
+                var cachPhanPhoi;
+                var soLuong;
+                var lichPhanPhoi;
+
+                var dayIDLength = 32 - new Date(currentYear, currentMonth, 32).getDate();
+
+                if (document.getElementById("allLead").checked == true) {
+
+                   // arrayLich[0].NgayPhanPhoiLead = 1;
+                    cachPhanPhoi = 1;
+                }
+                if (document.getElementById("leadEveryDay").checked == true) {
+
+                    cachPhanPhoi = 2;
+                    soLuong= $('#soLuongEveryDay').val()
+                }
+
+                if (document.getElementById("leadNumberDay").checked == true) {
+                    cachPhanPhoi = 3;
+
+                }
+
+
+                var dataObject = JSON.stringify({
+                    'HeThong': $('#HeThong').val(),
+                    'DuAn': $('#DuAn').val(),
+                    'MaChienDich': $('#MaChienDich').val(),
+                    'Bound_Code': $('#BoundCode').val(),
+                    'PartnerCode': $('#PartnerCode').val(),
+                    'Province_Code': $('#ProvinceCode').val(),
+                    'Valid_Date': $('#ValidDate').val(),
+                    'Post_Date': $('#PostDate').val(),
+                    'CCLimitTu': $('#CCLimitTu').val(),
+                    'CCLimitDen': $('#CCLimitDen').val(),
+                    'UPLLimitTu': $('#UPLLimitTu').val(),
+                    'UPLLimitDen': $('#UPLLimitDen').val(),
+                    'UPL_Interest': $('#LaiXuat').val(),
+                    'BandCCTu': $('#BandCCTu').val(),
+                    'BandCCDen': $('#BandCCDen').val(),
+                    'BandUPLTu': $('#BandUPLTu').val(),
+                    'BandUPLDen': $('#BandUPLDen').val(),
+                    'CachPhanPhoi': cachPhanPhoi,
+                    'SoLuong': soLuong,
+                    'NamPhanPhoi':$('#year').val(),
+                    'ThangPhanPhoi':$('#month').val(),
+                    'ID1': $('#1').val(),
+                    'ID2': $('#2').val(),
+                    'ID3': $('#3').val(),
+                    'ID4': $('#4').val(),
+                    'ID5': $('#5').val(),
+                    'ID6': $('#6').val(),
+                    'ID7': $('#7').val(),
+                    'ID8': $('#8').val(),
+                    'ID9': $('#9').val(),
+                    'ID10': $('#10').val(),
+                    'ID11': $('#11').val(),
+                    'ID12': $('#12').val(),
+                    'ID13': $('#13').val(),
+                    'ID14': $('#14').val(),
+                    'ID15': $('#15').val(),
+                    'ID16': $('#16').val(),
+                    'ID17': $('#17').val(),
+                    'ID18': $('#18').val(),
+                    'ID19': $('#19').val(),
+                    'ID20': $('#20').val(),
+                    'ID21': $('#21').val(),
+                    'ID22': $('#22').val(),
+                    'ID23': $('#23').val(),
+                    'ID24': $('#24').val(),
+                    'ID25': $('#25').val(),
+                    'ID26': $('#26').val(),
+                    'ID27': $('#27').val(),
+                    'ID28': $('#28').val(),
+                    'ID29': $('#29').val(),
+                    'ID30': $('#30').val(),
+                    'ID31': $('#31').val(),
+                });
+                $.ajax({
+                   type: 'POST',
+                   url: "@Url.Action("Save", "PhanPhoiLead")"  ,
+                   contentType: "application/json; charset=utf-8",
+                   data: dataObject,
+                   }).done(function (data) {
+                          alert("Woa Thành công rồi nè")
+                        }
+                    );
+                console.log(dataObject);
+
+            });
+        });
+
+  var myVar = setInterval(myTimer, 600000);
+
+    function myTimer() {
+        debugger;
+     $.ajax({
+                   type: 'POST',
+                   url: "@Url.Action("AuToCheckPhanPhoi", "PhanPhoiLead")"  ,
+                   contentType: "application/json; charset=utf-8",
+                   }).done(function (data) {
+                        }
+                    );
+}
+    </script>
+
+
+}
+
+@section scripImportLeadJeMultiselectJs11{
+    ComponentsPickers.init();
+}@section scripImportLeadJeMultiselectJs111{
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/clockface/js/clockface.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script type="text/javascript" src="/Assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="/Assets/admin/pages/scripts/components-pickers.js"></script>
+}
+@section scripImportLeadJeMultiselectJs{
+    <script src="~/Assets/global/scripts/munty.js"></script>
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>*@
+}
+@section scripImportLeadJeMultiselect{
+    <script>
+        $(document).ready(function () {
+            $('#multiple-checkboxes').multiselect({
+                includeSelectAllOption: true,
+            });
+        });
+        $(document).ready(function () {
+            $('#multiple-checkboxes2').multiselect({
+                includeSelectAllOption: true,
+            });
+        });
+        $(document).ready(function () {
+            $('#multiple-checkboxes3').multiselect({
+                includeSelectAllOption: true,
+            });
+        });
+        $(document).ready(function () {
+            $('#BoundCode').multiselect({
+                includeSelectAllOption: true,
+            });
+        });
+        $(document).ready(function () {
+            debugger
+            $('#ProvinceCode').multiselect({
+                includeSelectAllOption: true,
+            });
+
+        });
+    </script>
+}
